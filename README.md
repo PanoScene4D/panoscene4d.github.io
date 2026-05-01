@@ -61,6 +61,22 @@ http://127.0.0.1:3000/?load=https://example.com/static.sog&filename=static.sog&s
 
 The scene URLs must be HTTPS and must allow browser CORS requests.
 
+## VR Performance
+
+The viewer starts immersive VR with a reduced framebuffer scale by default:
+
+```text
+xrScale=0.7
+```
+
+Lower values improve Quest performance at the cost of sharpness:
+
+```text
+https://panoscene4d.github.io/PanoScene4D/?xrScale=0.6
+```
+
+Use `xrScale=1` for native headset resolution if performance allows.
+
 ## GitHub Pages
 
 Push to `main`, then enable Pages with source `GitHub Actions` in repository settings.
