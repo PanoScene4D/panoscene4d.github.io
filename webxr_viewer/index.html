@@ -22,8 +22,7 @@
             const params = new URLSearchParams(window.location.search);
             if (!params.has('sequence') && !params.has('load')) {
                 const basePath = new URL('.', window.location.href).pathname;
-                const assetVersion = '20260501-compressed-ply';
-                const staticScene = `${basePath}scenes/case1_static_compressed/scene.compressed.ply?v=${assetVersion}`;
+                const staticScene = `${basePath}scenes/case1_static_compressed/scene.compressed.ply`;
                 const sequence = `${basePath}scenes/girl_ply_seq_sam3_rotx_y135_staticworld/sequence.json`;
                 const next = new URL(window.location.href);
                 next.searchParams.set('load', staticScene);
