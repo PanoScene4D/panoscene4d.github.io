@@ -5,7 +5,13 @@ on:
   push:
     branches: [ main ]
     paths:
-      - webxr_viewer/**
+      - src/**
+      - static/**
+      - package*.json
+      - rollup.config.mjs
+      - copy-and-watch.mjs
+      - tsconfig.json
+      - webxr_viewer/scenes/**
       - .github/workflows/pages.yml
 
 permissions:
@@ -26,7 +32,22 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          BASE_HREF: /${{ github.event.repository.name }}/
+          SKIP_SCENES_COPY: '1'
 
       - name: Setup Pages
         uses: actions/configure-pages@v6

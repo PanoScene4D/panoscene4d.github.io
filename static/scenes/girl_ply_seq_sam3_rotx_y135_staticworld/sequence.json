@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "name": "girl_ply_seq_sam3_rotx_y135_staticworld",
+  "fps": 12.0,
+  "autoplay": true,
+  "frames": [
+    {
+      "index": 0,
+      "filename": "girl_000000.ply",
+      "url": "assets/girl_000000.ply"
+    },
+    {
+      "index": 1,
+      "filename": "girl_000001.ply",
+      "url": "assets/girl_000001.ply"
+    },
+    {
+      "index": 2,
+      "filename": "girl_000002.ply",
+      "url": "assets/girl_000002.ply"
+    },
+    {
+      "index": 3,
+      "filename": "girl_000003.ply",
+      "url": "assets/girl_000003.ply"
+    },
+    {
+      "index": 4,
+      "filename": "girl_000004.ply",
+      "url": "assets/girl_000004.ply"
+    },
+    {
+      "index": 5,
+      "filename": "girl_000005.ply",
+      "url": "assets/girl_000005.ply"
+    },
+    {
+      "index": 6,
+      "filename": "girl_000006.ply",
+      "url": "assets/girl_000006.ply"
+    },
+    {
+      "index": 7,
+      "filename": "girl_000007.ply",
+      "url": "assets/girl_000007.ply"
+    },
+    {
+      "index": 8,
+      "filename": "girl_000008.ply",
+      "url": "assets/girl_000008.ply"
+    },
+    {
+      "index": 9,
+      "filename": "girl_000009.ply",
+      "url": "assets/girl_000009.ply"
+    },
+    {
+      "index": 10,
+      "filename": "girl_000010.ply",
+      "url": "assets/girl_000010.ply"
+    },
+    {
+      "index": 11,
+      "filename": "girl_000011.ply",
+      "url": "assets/girl_000011.ply"
+    },
+    {
+      "index": 12,
+      "filename": "girl_000012.ply",
+      "url": "assets/girl_000012.ply"
+    },
+    {
+      "index": 13,
+      "filename": "girl_000013.ply",
+      "url": "assets/girl_000013.ply"
+    },
+    {
+      "index": 14,
+      "filename": "girl_000014.ply",
+      "url": "assets/girl_000014.ply"
+    },
+    {
+      "index": 15,
+      "filename": "girl_000015.ply",
+      "url": "assets/girl_000015.ply"
+    },
+    {
+      "index": 16,
+      "filename": "girl_000016.ply",
+      "url": "assets/girl_000016.ply"
+    },
+    {
+      "index": 17,
+      "filename": "girl_000017.ply",
+      "url": "assets/girl_000017.ply"
+    },
+    {
+      "index": 18,
+      "filename": "girl_000018.ply",
+      "url": "assets/girl_000018.ply"
+    },
+    {
+      "index": 19,
+      "filename": "girl_000019.ply",
+      "url": "assets/girl_000019.ply"
+    },
+    {
+      "index": 20,
+      "filename": "girl_000020.ply",
+      "url": "assets/girl_000020.ply"
+    },
+    {
+      "index": 21,
+      "filename": "girl_000021.ply",
+      "url": "assets/girl_000021.ply"
+    },
+    {
+      "index": 22,
+      "filename": "girl_000022.ply",
+      "url": "assets/girl_000022.ply"
+    },
+    {
+      "index": 23,
+      "filename": "girl_000023.ply",
+      "url": "assets/girl_000023.ply"
+    },
+    {
+      "index": 24,
+      "filename": "girl_000024.ply",
+      "url": "assets/girl_000024.ply"
+    },
+    {
+      "index": 25,
+      "filename": "girl_000025.ply",
+      "url": "assets/girl_000025.ply"
+    },
+    {
+      "index": 26,
+      "filename": "girl_000026.ply",
+      "url": "assets/girl_000026.ply"
+    }
+  ]
+}

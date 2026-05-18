@@ -1,0 +1,1 @@
+http://127.0.0.1:3000/?sequence=/scenes/object002_baked_seq_gpu/sequence.json

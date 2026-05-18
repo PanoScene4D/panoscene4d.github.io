@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "name": "object002_baked_seq_gpu",
+  "fps": 12.0,
+  "autoplay": true,
+  "frames": [
+    {
+      "index": 0,
+      "filename": "frame_000000.ply",
+      "url": "assets/frame_000000.ply"
+    },
+    {
+      "index": 1,
+      "filename": "frame_000001.ply",
+      "url": "assets/frame_000001.ply"
+    },
+    {
+      "index": 2,
+      "filename": "frame_000002.ply",
+      "url": "assets/frame_000002.ply"
+    },
+    {
+      "index": 3,
+      "filename": "frame_000003.ply",
+      "url": "assets/frame_000003.ply"
+    },
+    {
+      "index": 4,
+      "filename": "frame_000004.ply",
+      "url": "assets/frame_000004.ply"
+    },
+    {
+      "index": 5,
+      "filename": "frame_000005.ply",
+      "url": "assets/frame_000005.ply"
+    },
+    {
+      "index": 6,
+      "filename": "frame_000006.ply",
+      "url": "assets/frame_000006.ply"
+    },
+    {
+      "index": 7,
+      "filename": "frame_000007.ply",
+      "url": "assets/frame_000007.ply"
+    },
+    {
+      "index": 8,
+      "filename": "frame_000008.ply",
+      "url": "assets/frame_000008.ply"
+    },
+    {
+      "index": 9,
+      "filename": "frame_000009.ply",
+      "url": "assets/frame_000009.ply"
+    },
+    {
+      "index": 10,
+      "filename": "frame_000010.ply",
+      "url": "assets/frame_000010.ply"
+    },
+    {
+      "index": 11,
+      "filename": "frame_000011.ply",
+      "url": "assets/frame_000011.ply"
+    },
+    {
+      "index": 12,
+      "filename": "frame_000012.ply",
+      "url": "assets/frame_000012.ply"
+    },
+    {
+      "index": 13,
+      "filename": "frame_000013.ply",
+      "url": "assets/frame_000013.ply"
+    },
+    {
+      "index": 14,
+      "filename": "frame_000014.ply",
+      "url": "assets/frame_000014.ply"
+    },
+    {
+      "index": 15,
+      "filename": "frame_000015.ply",
+      "url": "assets/frame_000015.ply"
+    },
+    {
+      "index": 16,
+      "filename": "frame_000016.ply",
+      "url": "assets/frame_000016.ply"
+    },
+    {
+      "index": 17,
+      "filename": "frame_000017.ply",
+      "url": "assets/frame_000017.ply"
+    },
+    {
+      "index": 18,
+      "filename": "frame_000018.ply",
+      "url": "assets/frame_000018.ply"
+    },
+    {
+      "index": 19,
+      "filename": "frame_000019.ply",
+      "url": "assets/frame_000019.ply"
+    }
+  ]
+}

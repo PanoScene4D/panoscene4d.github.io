@@ -1,0 +1,3604 @@
+{
+  "scene": "case1_obj002_sharp8k_cube6_staticworld_z180",
+  "operation": "rotate all splats 180 degrees about global z axis",
+  "transform_convention": "p_out = T @ [x, y, z, 1], equivalent to x=-x, y=-y, z=z",
+  "transform": [
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_background": "/mnt/d/develop/master_thesis/Scene360/runs/case_cube6_sharp360_da360_20260518_054033/result.ply",
+  "source_sequence": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq",
+  "output_static_scene": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180",
+  "processed_count": 87,
+  "processed": [
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/runs/case_cube6_sharp360_da360_20260518_054033/result.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/background.ply",
+      "vertices": 4966359,
+      "bbox_before": {
+        "min": [
+          -258.5581359863281,
+          -190.42547607421875,
+          -260.6872863769531
+        ],
+        "max": [
+          217.43902587890625,
+          5.089989185333252,
+          258.82427978515625
+        ],
+        "center": [
+          1.6742378096607122,
+          -21.041134400391556,
+          -4.093215333654303
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          -217.43902587890625,
+          -5.089989185333252,
+          -260.6872863769531
+        ],
+        "max": [
+          258.5581359863281,
+          190.42547607421875,
+          258.82427978515625
+        ],
+        "center": [
+          -1.6742378096607122,
+          21.041134400391556,
+          -4.093215333654303
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000000.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000000.ply",
+      "vertices": 8536,
+      "bbox_before": {
+        "min": [
+          -4.32421875,
+          -0.9189453125,
+          3.158203125
+        ],
+        "max": [
+          -0.53125,
+          1.9208984375,
+          15.328125
+        ],
+        "center": [
+          -0.854725688444529,
+          0.45375227731597567,
+          3.697351200064433
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.53125,
+          -1.9208984375,
+          3.158203125
+        ],
+        "max": [
+          4.32421875,
+          0.9189453125,
+          15.328125
+        ],
+        "center": [
+          0.854725688444529,
+          -0.45375227731597567,
+          3.697351200064433
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000001.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000001.ply",
+      "vertices": 8975,
+      "bbox_before": {
+        "min": [
+          -4.1796875,
+          -0.67919921875,
+          3.09765625
+        ],
+        "max": [
+          -0.5478515625,
+          1.9169921875,
+          15.3828125
+        ],
+        "center": [
+          -0.8955179317548746,
+          0.45804954686038674,
+          3.6793828342618387
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.5478515625,
+          -1.9169921875,
+          3.09765625
+        ],
+        "max": [
+          4.1796875,
+          0.67919921875,
+          15.3828125
+        ],
+        "center": [
+          0.8955179317548746,
+          -0.45804954686038674,
+          3.6793828342618387
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000002.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000002.ply",
+      "vertices": 8948,
+      "bbox_before": {
+        "min": [
+          -4.15234375,
+          -0.60546875,
+          3.029296875
+        ],
+        "max": [
+          -0.57275390625,
+          1.84375,
+          15.21875
+        ],
+        "center": [
+          -0.9241856049361589,
+          0.44023289742713456,
+          3.565196569764193
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.57275390625,
+          -1.84375,
+          3.029296875
+        ],
+        "max": [
+          4.15234375,
+          0.60546875,
+          15.21875
+        ],
+        "center": [
+          0.9241856049361589,
+          -0.44023289742713456,
+          3.565196569764193
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000003.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000003.ply",
+      "vertices": 8700,
+      "bbox_before": {
+        "min": [
+          -5.80859375,
+          -0.5,
+          2.962890625
+        ],
+        "max": [
+          -0.611328125,
+          1.6044921875,
+          14.21875
+        ],
+        "center": [
+          -0.9587413568606322,
+          0.392103125494102,
+          3.4407727191091952
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.611328125,
+          -1.6044921875,
+          2.962890625
+        ],
+        "max": [
+          5.80859375,
+          0.5,
+          14.21875
+        ],
+        "center": [
+          0.9587413568606322,
+          -0.392103125494102,
+          3.4407727191091952
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000004.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000004.ply",
+      "vertices": 8669,
+      "bbox_before": {
+        "min": [
+          -5.56640625,
+          -1.060546875,
+          3.056640625
+        ],
+        "max": [
+          -0.6650390625,
+          1.388671875,
+          15.4765625
+        ],
+        "center": [
+          -1.040001099463606,
+          0.31730208109236185,
+          3.4237785590177645
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.6650390625,
+          -1.388671875,
+          3.056640625
+        ],
+        "max": [
+          5.56640625,
+          1.060546875,
+          15.4765625
+        ],
+        "center": [
+          1.040001099463606,
+          -0.31730208109236185,
+          3.4237785590177645
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000005.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000005.ply",
+      "vertices": 11318,
+      "bbox_before": {
+        "min": [
+          -5.828125,
+          -0.66357421875,
+          2.84765625
+        ],
+        "max": [
+          -0.67431640625,
+          1.5771484375,
+          14.40625
+        ],
+        "center": [
+          -1.071526559255721,
+          0.4356741794618875,
+          3.2878871391257287
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.67431640625,
+          -1.5771484375,
+          2.84765625
+        ],
+        "max": [
+          5.828125,
+          0.66357421875,
+          14.40625
+        ],
+        "center": [
+          1.071526559255721,
+          -0.4356741794618875,
+          3.2878871391257287
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000006.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000006.ply",
+      "vertices": 12539,
+      "bbox_before": {
+        "min": [
+          -5.12890625,
+          -1.2255859375,
+          2.7109375
+        ],
+        "max": [
+          -0.64501953125,
+          1.5107421875,
+          14.84375
+        ],
+        "center": [
+          -1.0314419012680438,
+          0.41713998164107846,
+          3.064176020815057
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.64501953125,
+          -1.5107421875,
+          2.7109375
+        ],
+        "max": [
+          5.12890625,
+          1.2255859375,
+          14.84375
+        ],
+        "center": [
+          1.0314419012680438,
+          -0.41713998164107846,
+          3.064176020815057
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000007.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000007.ply",
+      "vertices": 11862,
+      "bbox_before": {
+        "min": [
+          -5.171875,
+          -0.32666015625,
+          2.779296875
+        ],
+        "max": [
+          -0.67578125,
+          1.474609375,
+          12.7578125
+        ],
+        "center": [
+          -1.0476946472980948,
+          0.3584185486960584,
+          3.087578276481622
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.67578125,
+          -1.474609375,
+          2.779296875
+        ],
+        "max": [
+          5.171875,
+          0.32666015625,
+          12.7578125
+        ],
+        "center": [
+          1.0476946472980948,
+          -0.3584185486960584,
+          3.087578276481622
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000008.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000008.ply",
+      "vertices": 12964,
+      "bbox_before": {
+        "min": [
+          -5.7265625,
+          -0.68310546875,
+          2.802734375
+        ],
+        "max": [
+          -0.68505859375,
+          1.6962890625,
+          14.109375
+        ],
+        "center": [
+          -1.0959357026549483,
+          0.37508884090177347,
+          3.1257751333018358
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.68505859375,
+          -1.6962890625,
+          2.802734375
+        ],
+        "max": [
+          5.7265625,
+          0.68310546875,
+          14.109375
+        ],
+        "center": [
+          1.0959357026549483,
+          -0.37508884090177347,
+          3.1257751333018358
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000009.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000009.ply",
+      "vertices": 13326,
+      "bbox_before": {
+        "min": [
+          -6.83984375,
+          -0.374267578125,
+          2.712890625
+        ],
+        "max": [
+          -0.6826171875,
+          1.5732421875,
+          14.3125
+        ],
+        "center": [
+          -1.1193416755191918,
+          0.35875037865570386,
+          3.0926243809095
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.6826171875,
+          -1.5732421875,
+          2.712890625
+        ],
+        "max": [
+          6.83984375,
+          0.374267578125,
+          14.3125
+        ],
+        "center": [
+          1.1193416755191918,
+          -0.35875037865570386,
+          3.0926243809095
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000010.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000010.ply",
+      "vertices": 14060,
+      "bbox_before": {
+        "min": [
+          -6.4453125,
+          -0.35791015625,
+          2.736328125
+        ],
+        "max": [
+          -0.70751953125,
+          1.490234375,
+          13.9609375
+        ],
+        "center": [
+          -1.158884530861042,
+          0.38800176463459496,
+          3.0469304265202704
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.70751953125,
+          -1.490234375,
+          2.736328125
+        ],
+        "max": [
+          6.4453125,
+          0.35791015625,
+          13.9609375
+        ],
+        "center": [
+          1.158884530861042,
+          -0.38800176463459496,
+          3.0469304265202704
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000011.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000011.ply",
+      "vertices": 14723,
+      "bbox_before": {
+        "min": [
+          -6.96875,
+          -0.68115234375,
+          2.6640625
+        ],
+        "max": [
+          -0.73388671875,
+          1.751953125,
+          14.8046875
+        ],
+        "center": [
+          -1.2151311205787714,
+          0.42808927253035056,
+          3.1097941995517218
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.73388671875,
+          -1.751953125,
+          2.6640625
+        ],
+        "max": [
+          6.96875,
+          0.68115234375,
+          14.8046875
+        ],
+        "center": [
+          1.2151311205787714,
+          -0.42808927253035056,
+          3.1097941995517218
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000012.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000012.ply",
+      "vertices": 15120,
+      "bbox_before": {
+        "min": [
+          -6.85546875,
+          -0.47705078125,
+          2.525390625
+        ],
+        "max": [
+          -0.79443359375,
+          1.44140625,
+          14.5
+        ],
+        "center": [
+          -1.241331554594494,
+          0.4627664708626018,
+          2.9708558097718254
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.79443359375,
+          -1.44140625,
+          2.525390625
+        ],
+        "max": [
+          6.85546875,
+          0.47705078125,
+          14.5
+        ],
+        "center": [
+          1.241331554594494,
+          -0.4627664708626018,
+          2.9708558097718254
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000013.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000013.ply",
+      "vertices": 15507,
+      "bbox_before": {
+        "min": [
+          -7.1875,
+          -0.453369140625,
+          2.580078125
+        ],
+        "max": [
+          -0.83642578125,
+          1.482421875,
+          14.6171875
+        ],
+        "center": [
+          -1.2566835995437544,
+          0.49280788274516124,
+          2.942093313705101
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.83642578125,
+          -1.482421875,
+          2.580078125
+        ],
+        "max": [
+          7.1875,
+          0.453369140625,
+          14.6171875
+        ],
+        "center": [
+          1.2566835995437544,
+          -0.49280788274516124,
+          2.942093313705101
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000014.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000014.ply",
+      "vertices": 15594,
+      "bbox_before": {
+        "min": [
+          -4.81640625,
+          -0.275634765625,
+          2.55078125
+        ],
+        "max": [
+          -0.9150390625,
+          1.533203125,
+          9.7421875
+        ],
+        "center": [
+          -1.2751481752296556,
+          0.5224146197105778,
+          2.945238728637617
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.9150390625,
+          -1.533203125,
+          2.55078125
+        ],
+        "max": [
+          4.81640625,
+          0.275634765625,
+          9.7421875
+        ],
+        "center": [
+          1.2751481752296556,
+          -0.5224146197105778,
+          2.945238728637617
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000015.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000015.ply",
+      "vertices": 15875,
+      "bbox_before": {
+        "min": [
+          -7.33984375,
+          -0.274169921875,
+          2.66796875
+        ],
+        "max": [
+          -0.96875,
+          1.5439453125,
+          14.03125
+        ],
+        "center": [
+          -1.3084584153543306,
+          0.555452020720234,
+          2.939883489173228
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.96875,
+          -1.5439453125,
+          2.66796875
+        ],
+        "max": [
+          7.33984375,
+          0.274169921875,
+          14.03125
+        ],
+        "center": [
+          1.3084584153543306,
+          -0.555452020720234,
+          2.939883489173228
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000016.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000016.ply",
+      "vertices": 16580,
+      "bbox_before": {
+        "min": [
+          -6.96875,
+          -1.0859375,
+          2.662109375
+        ],
+        "max": [
+          -1.0615234375,
+          1.7216796875,
+          14.3359375
+        ],
+        "center": [
+          -1.3489688960720747,
+          0.569054001821396,
+          2.9556958685162846
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.0615234375,
+          -1.7216796875,
+          2.662109375
+        ],
+        "max": [
+          6.96875,
+          1.0859375,
+          14.3359375
+        ],
+        "center": [
+          1.3489688960720747,
+          -0.569054001821396,
+          2.9556958685162846
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000017.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000017.ply",
+      "vertices": 17309,
+      "bbox_before": {
+        "min": [
+          -6.34765625,
+          -1.25,
+          2.669921875
+        ],
+        "max": [
+          -1.1025390625,
+          1.6689453125,
+          15.171875
+        ],
+        "center": [
+          -1.3941191630799006,
+          0.5718462612709998,
+          2.963143158003062
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1025390625,
+          -1.6689453125,
+          2.669921875
+        ],
+        "max": [
+          6.34765625,
+          1.25,
+          15.171875
+        ],
+        "center": [
+          1.3941191630799006,
+          -0.5718462612709998,
+          2.963143158003062
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000018.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000018.ply",
+      "vertices": 18096,
+      "bbox_before": {
+        "min": [
+          -8.765625,
+          -0.3125,
+          2.5625
+        ],
+        "max": [
+          -1.0498046875,
+          1.47265625,
+          14.6953125
+        ],
+        "center": [
+          -1.3728970123749724,
+          0.5418246804524928,
+          2.791186372333665
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.0498046875,
+          -1.47265625,
+          2.5625
+        ],
+        "max": [
+          8.765625,
+          0.3125,
+          14.6953125
+        ],
+        "center": [
+          1.3728970123749724,
+          -0.5418246804524928,
+          2.791186372333665
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000019.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000019.ply",
+      "vertices": 18667,
+      "bbox_before": {
+        "min": [
+          -8.046875,
+          -0.947265625,
+          2.548828125
+        ],
+        "max": [
+          -0.91845703125,
+          1.5478515625,
+          14.515625
+        ],
+        "center": [
+          -1.4042816513600203,
+          0.4979147588190667,
+          2.752977764905984
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.91845703125,
+          -1.5478515625,
+          2.548828125
+        ],
+        "max": [
+          8.046875,
+          0.947265625,
+          14.515625
+        ],
+        "center": [
+          1.4042816513600203,
+          -0.4979147588190667,
+          2.752977764905984
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000020.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000020.ply",
+      "vertices": 18858,
+      "bbox_before": {
+        "min": [
+          -7.171875,
+          -1.26953125,
+          2.453125
+        ],
+        "max": [
+          -1.037109375,
+          1.412109375,
+          14.0234375
+        ],
+        "center": [
+          -1.4110914880289531,
+          0.41099462928960606,
+          2.630077110012992
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.037109375,
+          -1.412109375,
+          2.453125
+        ],
+        "max": [
+          7.171875,
+          1.26953125,
+          14.0234375
+        ],
+        "center": [
+          1.4110914880289531,
+          -0.41099462928960606,
+          2.630077110012992
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000021.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000021.ply",
+      "vertices": 20124,
+      "bbox_before": {
+        "min": [
+          -5.15234375,
+          -0.385498046875,
+          2.328125
+        ],
+        "max": [
+          -0.939453125,
+          1.4033203125,
+          11.5390625
+        ],
+        "center": [
+          -1.3621425822012896,
+          0.3861823367812754,
+          2.4922006023591234
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.939453125,
+          -1.4033203125,
+          2.328125
+        ],
+        "max": [
+          5.15234375,
+          0.385498046875,
+          11.5390625
+        ],
+        "center": [
+          1.3621425822012896,
+          -0.3861823367812754,
+          2.4922006023591234
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000022.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000022.ply",
+      "vertices": 20879,
+      "bbox_before": {
+        "min": [
+          -8.5,
+          -1.3232421875,
+          2.34375
+        ],
+        "max": [
+          -0.755859375,
+          1.470703125,
+          13.328125
+        ],
+        "center": [
+          -1.4156200234086882,
+          0.3725413272387566,
+          2.536701425475358
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.755859375,
+          -1.470703125,
+          2.34375
+        ],
+        "max": [
+          8.5,
+          1.3232421875,
+          13.328125
+        ],
+        "center": [
+          1.4156200234086882,
+          -0.3725413272387566,
+          2.536701425475358
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000023.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000023.ply",
+      "vertices": 20673,
+      "bbox_before": {
+        "min": [
+          -7.69140625,
+          -1.0205078125,
+          2.298828125
+        ],
+        "max": [
+          -0.73291015625,
+          1.5029296875,
+          13.796875
+        ],
+        "center": [
+          -1.4458395640977966,
+          0.36830352665764127,
+          2.5281223357459006
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.73291015625,
+          -1.5029296875,
+          2.298828125
+        ],
+        "max": [
+          7.69140625,
+          1.0205078125,
+          13.796875
+        ],
+        "center": [
+          1.4458395640977966,
+          -0.36830352665764127,
+          2.5281223357459006
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000024.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000024.ply",
+      "vertices": 20189,
+      "bbox_before": {
+        "min": [
+          -8.2421875,
+          -1.23828125,
+          2.26171875
+        ],
+        "max": [
+          -0.83740234375,
+          1.537109375,
+          14.0390625
+        ],
+        "center": [
+          -1.4775496799386423,
+          0.3717636892774926,
+          2.5583120371860915
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.83740234375,
+          -1.537109375,
+          2.26171875
+        ],
+        "max": [
+          8.2421875,
+          1.23828125,
+          14.0390625
+        ],
+        "center": [
+          1.4775496799386423,
+          -0.3717636892774926,
+          2.5583120371860915
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000025.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000025.ply",
+      "vertices": 19417,
+      "bbox_before": {
+        "min": [
+          -8.59375,
+          -1.3271484375,
+          2.181640625
+        ],
+        "max": [
+          -0.8935546875,
+          1.494140625,
+          14.0859375
+        ],
+        "center": [
+          -1.4695121583213164,
+          0.35325972400745737,
+          2.4633020315638356
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.8935546875,
+          -1.494140625,
+          2.181640625
+        ],
+        "max": [
+          8.59375,
+          1.3271484375,
+          14.0859375
+        ],
+        "center": [
+          1.4695121583213164,
+          -0.35325972400745737,
+          2.4633020315638356
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000026.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000026.ply",
+      "vertices": 20809,
+      "bbox_before": {
+        "min": [
+          -8.8046875,
+          -1.1591796875,
+          2.251953125
+        ],
+        "max": [
+          -0.82861328125,
+          1.4755859375,
+          14.265625
+        ],
+        "center": [
+          -1.521051729044524,
+          0.35931199405794734,
+          2.5098627697150273
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.82861328125,
+          -1.4755859375,
+          2.251953125
+        ],
+        "max": [
+          8.8046875,
+          1.1591796875,
+          14.265625
+        ],
+        "center": [
+          1.521051729044524,
+          -0.35931199405794734,
+          2.5098627697150273
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000027.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000027.ply",
+      "vertices": 21931,
+      "bbox_before": {
+        "min": [
+          -9.078125,
+          -1.21875,
+          2.23828125
+        ],
+        "max": [
+          -0.98291015625,
+          1.4189453125,
+          14.1953125
+        ],
+        "center": [
+          -1.5273916407924286,
+          0.3512061284209949,
+          2.455013201917377
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          0.98291015625,
+          -1.4189453125,
+          2.23828125
+        ],
+        "max": [
+          9.078125,
+          1.21875,
+          14.1953125
+        ],
+        "center": [
+          1.5273916407924286,
+          -0.3512061284209949,
+          2.455013201917377
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000028.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000028.ply",
+      "vertices": 22478,
+      "bbox_before": {
+        "min": [
+          -7.49609375,
+          -0.5888671875,
+          2.15234375
+        ],
+        "max": [
+          -1.18359375,
+          1.453125,
+          12.5859375
+        ],
+        "center": [
+          -1.4844352585722707,
+          0.35036784607497107,
+          2.327957388196236
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.18359375,
+          -1.453125,
+          2.15234375
+        ],
+        "max": [
+          7.49609375,
+          0.5888671875,
+          12.5859375
+        ],
+        "center": [
+          1.4844352585722707,
+          -0.35036784607497107,
+          2.327957388196236
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000029.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000029.ply",
+      "vertices": 23270,
+      "bbox_before": {
+        "min": [
+          -10.125,
+          -1.57421875,
+          2.091796875
+        ],
+        "max": [
+          -1.2373046875,
+          1.5078125,
+          13.9609375
+        ],
+        "center": [
+          -1.5561560787763213,
+          0.36962862129266755,
+          2.3349026039428447
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.2373046875,
+          -1.5078125,
+          2.091796875
+        ],
+        "max": [
+          10.125,
+          1.57421875,
+          13.9609375
+        ],
+        "center": [
+          1.5561560787763213,
+          -0.36962862129266755,
+          2.3349026039428447
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000030.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000030.ply",
+      "vertices": 27276,
+      "bbox_before": {
+        "min": [
+          -9.796875,
+          -1.39453125,
+          2.0234375
+        ],
+        "max": [
+          -1.177734375,
+          1.55078125,
+          14.15625
+        ],
+        "center": [
+          -1.5762523601334506,
+          0.46181399058722683,
+          2.266222337173706
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.177734375,
+          -1.55078125,
+          2.0234375
+        ],
+        "max": [
+          9.796875,
+          1.39453125,
+          14.15625
+        ],
+        "center": [
+          1.5762523601334506,
+          -0.46181399058722683,
+          2.266222337173706
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000031.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000031.ply",
+      "vertices": 30044,
+      "bbox_before": {
+        "min": [
+          -9.3984375,
+          -1.287109375,
+          1.884765625
+        ],
+        "max": [
+          -1.1865234375,
+          1.5888671875,
+          13.546875
+        ],
+        "center": [
+          -1.5491986752762614,
+          0.5040642764156945,
+          2.145612541709659
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1865234375,
+          -1.5888671875,
+          1.884765625
+        ],
+        "max": [
+          9.3984375,
+          1.287109375,
+          13.546875
+        ],
+        "center": [
+          1.5491986752762614,
+          -0.5040642764156945,
+          2.145612541709659
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000032.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000032.ply",
+      "vertices": 30350,
+      "bbox_before": {
+        "min": [
+          -10.2265625,
+          -1.1669921875,
+          1.8681640625
+        ],
+        "max": [
+          -1.21875,
+          1.4736328125,
+          13.0390625
+        ],
+        "center": [
+          -1.5565741801379736,
+          0.5121511514457878,
+          2.059244330467463
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.21875,
+          -1.4736328125,
+          1.8681640625
+        ],
+        "max": [
+          10.2265625,
+          1.1669921875,
+          13.0390625
+        ],
+        "center": [
+          1.5565741801379736,
+          -0.5121511514457878,
+          2.059244330467463
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000033.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000033.ply",
+      "vertices": 29575,
+      "bbox_before": {
+        "min": [
+          -9.703125,
+          -0.84228515625,
+          1.86328125
+        ],
+        "max": [
+          -1.3271484375,
+          1.66796875,
+          13.25
+        ],
+        "center": [
+          -1.6038337053571428,
+          0.5306345119021851,
+          2.055035067096365
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3271484375,
+          -1.66796875,
+          1.86328125
+        ],
+        "max": [
+          9.703125,
+          0.84228515625,
+          13.25
+        ],
+        "center": [
+          1.6038337053571428,
+          -0.5306345119021851,
+          2.055035067096365
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000034.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000034.ply",
+      "vertices": 29166,
+      "bbox_before": {
+        "min": [
+          -11.640625,
+          -0.77392578125,
+          1.7392578125
+        ],
+        "max": [
+          -1.34765625,
+          1.49609375,
+          12.8359375
+        ],
+        "center": [
+          -1.5880767230036688,
+          0.48272771380577595,
+          1.9591808861881128
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.34765625,
+          -1.49609375,
+          1.7392578125
+        ],
+        "max": [
+          11.640625,
+          0.77392578125,
+          12.8359375
+        ],
+        "center": [
+          1.5880767230036688,
+          -0.48272771380577595,
+          1.9591808861881128
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000035.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000035.ply",
+      "vertices": 32426,
+      "bbox_before": {
+        "min": [
+          -11.4453125,
+          -1.1279296875,
+          1.7236328125
+        ],
+        "max": [
+          -1.373046875,
+          1.4453125,
+          12.796875
+        ],
+        "center": [
+          -1.6037194243720316,
+          0.4920450396344552,
+          1.9184445328401591
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.373046875,
+          -1.4453125,
+          1.7236328125
+        ],
+        "max": [
+          11.4453125,
+          1.1279296875,
+          12.796875
+        ],
+        "center": [
+          1.6037194243720316,
+          -0.4920450396344552,
+          1.9184445328401591
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000036.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000036.ply",
+      "vertices": 37089,
+      "bbox_before": {
+        "min": [
+          -12.3984375,
+          -2.11328125,
+          1.662109375
+        ],
+        "max": [
+          -1.3662109375,
+          1.49609375,
+          13.484375
+        ],
+        "center": [
+          -1.5917872117996577,
+          0.5084875457769447,
+          1.8495824918186659
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3662109375,
+          -1.49609375,
+          1.662109375
+        ],
+        "max": [
+          12.3984375,
+          2.11328125,
+          13.484375
+        ],
+        "center": [
+          1.5917872117996577,
+          -0.5084875457769447,
+          1.8495824918186659
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000037.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000037.ply",
+      "vertices": 38763,
+      "bbox_before": {
+        "min": [
+          -13.1484375,
+          -2.25390625,
+          1.6318359375
+        ],
+        "max": [
+          -1.37890625,
+          1.4365234375,
+          13.984375
+        ],
+        "center": [
+          -1.5922402746336712,
+          0.5096506921417007,
+          1.8057205455669711
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.37890625,
+          -1.4365234375,
+          1.6318359375
+        ],
+        "max": [
+          13.1484375,
+          2.25390625,
+          13.984375
+        ],
+        "center": [
+          1.5922402746336712,
+          -0.5096506921417007,
+          1.8057205455669711
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000038.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000038.ply",
+      "vertices": 51564,
+      "bbox_before": {
+        "min": [
+          -13.03125,
+          -1.3193359375,
+          1.583984375
+        ],
+        "max": [
+          -1.40234375,
+          1.505859375,
+          12.6484375
+        ],
+        "center": [
+          -1.6573613313067257,
+          0.49044812060144116,
+          1.7936162690418702
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.40234375,
+          -1.505859375,
+          1.583984375
+        ],
+        "max": [
+          13.03125,
+          1.3193359375,
+          12.6484375
+        ],
+        "center": [
+          1.6573613313067257,
+          -0.49044812060144116,
+          1.7936162690418702
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000039.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000039.ply",
+      "vertices": 53491,
+      "bbox_before": {
+        "min": [
+          -11.7734375,
+          -2.021484375,
+          1.6005859375
+        ],
+        "max": [
+          -1.404296875,
+          1.48046875,
+          12.546875
+        ],
+        "center": [
+          -1.6441839003874483,
+          0.46744666489623304,
+          1.741297053768391
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.404296875,
+          -1.48046875,
+          1.6005859375
+        ],
+        "max": [
+          11.7734375,
+          2.021484375,
+          12.546875
+        ],
+        "center": [
+          1.6441839003874483,
+          -0.46744666489623304,
+          1.741297053768391
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000040.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000040.ply",
+      "vertices": 56771,
+      "bbox_before": {
+        "min": [
+          -11.7734375,
+          -1.4541015625,
+          1.45703125
+        ],
+        "max": [
+          -1.3818359375,
+          1.5029296875,
+          13.203125
+        ],
+        "center": [
+          -1.5940942937140001,
+          0.4324473279308215,
+          1.6542035037144844
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3818359375,
+          -1.5029296875,
+          1.45703125
+        ],
+        "max": [
+          11.7734375,
+          1.4541015625,
+          13.203125
+        ],
+        "center": [
+          1.5940942937140001,
+          -0.4324473279308215,
+          1.6542035037144844
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000041.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000041.ply",
+      "vertices": 63845,
+      "bbox_before": {
+        "min": [
+          -11.703125,
+          -1.3154296875,
+          1.4404296875
+        ],
+        "max": [
+          -1.38671875,
+          1.5537109375,
+          12.8046875
+        ],
+        "center": [
+          -1.598272381475644,
+          0.48259646213633944,
+          1.6255126704567704
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.38671875,
+          -1.5537109375,
+          1.4404296875
+        ],
+        "max": [
+          11.703125,
+          1.3154296875,
+          12.8046875
+        ],
+        "center": [
+          1.598272381475644,
+          -0.48259646213633944,
+          1.6255126704567704
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000042.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000042.ply",
+      "vertices": 65824,
+      "bbox_before": {
+        "min": [
+          -12.7265625,
+          -2.12890625,
+          1.0537109375
+        ],
+        "max": [
+          -1.228515625,
+          1.564453125,
+          12.984375
+        ],
+        "center": [
+          -1.605626871705229,
+          0.49816687659287573,
+          1.6044260636080685
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.228515625,
+          -1.564453125,
+          1.0537109375
+        ],
+        "max": [
+          12.7265625,
+          2.12890625,
+          12.984375
+        ],
+        "center": [
+          1.605626871705229,
+          -0.49816687659287573,
+          1.6044260636080685
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000043.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000043.ply",
+      "vertices": 64660,
+      "bbox_before": {
+        "min": [
+          -13.390625,
+          -1.931640625,
+          1.048828125
+        ],
+        "max": [
+          -1.228515625,
+          1.6025390625,
+          13.9296875
+        ],
+        "center": [
+          -1.577062078323152,
+          0.47706961417625443,
+          1.560922412064066
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.228515625,
+          -1.6025390625,
+          1.048828125
+        ],
+        "max": [
+          13.390625,
+          1.931640625,
+          13.9296875
+        ],
+        "center": [
+          1.577062078323152,
+          -0.47706961417625443,
+          1.560922412064066
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000044.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000044.ply",
+      "vertices": 65142,
+      "bbox_before": {
+        "min": [
+          -14.578125,
+          -1.62890625,
+          1.0517578125
+        ],
+        "max": [
+          -1.234375,
+          1.564453125,
+          13.4921875
+        ],
+        "center": [
+          -1.5598096933909766,
+          0.4757631424712555,
+          1.5256210261093073
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.234375,
+          -1.564453125,
+          1.0517578125
+        ],
+        "max": [
+          14.578125,
+          1.62890625,
+          13.4921875
+        ],
+        "center": [
+          1.5598096933909766,
+          -0.4757631424712555,
+          1.5256210261093073
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000045.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000045.ply",
+      "vertices": 60416,
+      "bbox_before": {
+        "min": [
+          -16.609375,
+          -2.23828125,
+          1.0283203125
+        ],
+        "max": [
+          -1.20703125,
+          1.5205078125,
+          13.90625
+        ],
+        "center": [
+          -1.5121819609302585,
+          0.4079018381500831,
+          1.4562444525249933
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.20703125,
+          -1.5205078125,
+          1.0283203125
+        ],
+        "max": [
+          16.609375,
+          2.23828125,
+          13.90625
+        ],
+        "center": [
+          1.5121819609302585,
+          -0.4079018381500831,
+          1.4562444525249933
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000046.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000046.ply",
+      "vertices": 57234,
+      "bbox_before": {
+        "min": [
+          -12.640625,
+          -1.7509765625,
+          1.021484375
+        ],
+        "max": [
+          -1.1982421875,
+          1.490234375,
+          12.6875
+        ],
+        "center": [
+          -1.4863213511363438,
+          0.33405004645309744,
+          1.407078510069408
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1982421875,
+          -1.490234375,
+          1.021484375
+        ],
+        "max": [
+          12.640625,
+          1.7509765625,
+          12.6875
+        ],
+        "center": [
+          1.4863213511363438,
+          -0.33405004645309744,
+          1.407078510069408
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000047.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000047.ply",
+      "vertices": 56991,
+      "bbox_before": {
+        "min": [
+          -12.6875,
+          -1.5517578125,
+          1.0224609375
+        ],
+        "max": [
+          -1.2021484375,
+          1.4814453125,
+          12.9375
+        ],
+        "center": [
+          -1.483893872771578,
+          0.2913213145864449,
+          1.3861148649019144
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.2021484375,
+          -1.4814453125,
+          1.0224609375
+        ],
+        "max": [
+          12.6875,
+          1.5517578125,
+          12.9375
+        ],
+        "center": [
+          1.483893872771578,
+          -0.2913213145864449,
+          1.3861148649019144
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000048.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000048.ply",
+      "vertices": 57864,
+      "bbox_before": {
+        "min": [
+          -20.15625,
+          -2.056640625,
+          1.01953125
+        ],
+        "max": [
+          -1.2041015625,
+          1.5478515625,
+          16.359375
+        ],
+        "center": [
+          -1.503800921530442,
+          0.27648863762042325,
+          1.3838941546935486
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.2041015625,
+          -1.5478515625,
+          1.01953125
+        ],
+        "max": [
+          20.15625,
+          2.056640625,
+          16.359375
+        ],
+        "center": [
+          1.503800921530442,
+          -0.27648863762042325,
+          1.3838941546935486
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000049.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000049.ply",
+      "vertices": 56403,
+      "bbox_before": {
+        "min": [
+          -12.625,
+          -1.7470703125,
+          1.03125
+        ],
+        "max": [
+          -1.1591796875,
+          1.423828125,
+          12.78125
+        ],
+        "center": [
+          -1.4752880671517916,
+          0.2492616994046316,
+          1.3400575261677128
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1591796875,
+          -1.423828125,
+          1.03125
+        ],
+        "max": [
+          12.625,
+          1.7470703125,
+          12.78125
+        ],
+        "center": [
+          1.4752880671517916,
+          -0.2492616994046316,
+          1.3400575261677128
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000050.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000050.ply",
+      "vertices": 56247,
+      "bbox_before": {
+        "min": [
+          -12.78125,
+          -1.6455078125,
+          1.013671875
+        ],
+        "max": [
+          -1.154296875,
+          1.4404296875,
+          12.8984375
+        ],
+        "center": [
+          -1.4570731793195637,
+          0.236985751742191,
+          1.3060775914993243
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.154296875,
+          -1.4404296875,
+          1.013671875
+        ],
+        "max": [
+          12.78125,
+          1.6455078125,
+          12.8984375
+        ],
+        "center": [
+          1.4570731793195637,
+          -0.236985751742191,
+          1.3060775914993243
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000051.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000051.ply",
+      "vertices": 56363,
+      "bbox_before": {
+        "min": [
+          -12.3515625,
+          -1.8701171875,
+          1.005859375
+        ],
+        "max": [
+          -1.1298828125,
+          1.4697265625,
+          12.46875
+        ],
+        "center": [
+          -1.4515956071026206,
+          0.2260276652091192,
+          1.2874292185808953
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1298828125,
+          -1.4697265625,
+          1.005859375
+        ],
+        "max": [
+          12.3515625,
+          1.8701171875,
+          12.46875
+        ],
+        "center": [
+          1.4515956071026206,
+          -0.2260276652091192,
+          1.2874292185808953
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000052.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000052.ply",
+      "vertices": 55343,
+      "bbox_before": {
+        "min": [
+          -15.5625,
+          -1.91796875,
+          0.9384765625
+        ],
+        "max": [
+          -1.1025390625,
+          1.482421875,
+          11.6875
+        ],
+        "center": [
+          -1.44029026932042,
+          0.17948629212268416,
+          1.2530888776160716
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1025390625,
+          -1.482421875,
+          0.9384765625
+        ],
+        "max": [
+          15.5625,
+          1.91796875,
+          11.6875
+        ],
+        "center": [
+          1.44029026932042,
+          -0.17948629212268416,
+          1.2530888776160716
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000053.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000053.ply",
+      "vertices": 56818,
+      "bbox_before": {
+        "min": [
+          -18.390625,
+          -2.3046875,
+          0.7255859375
+        ],
+        "max": [
+          -1.1494140625,
+          1.4619140625,
+          15.3359375
+        ],
+        "center": [
+          -1.4542682474083917,
+          0.17928976051495218,
+          1.2496268409933913
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1494140625,
+          -1.4619140625,
+          0.7255859375
+        ],
+        "max": [
+          18.390625,
+          2.3046875,
+          15.3359375
+        ],
+        "center": [
+          1.4542682474083917,
+          -0.17928976051495218,
+          1.2496268409933913
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000054.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000054.ply",
+      "vertices": 61208,
+      "bbox_before": {
+        "min": [
+          -19.671875,
+          -2.25,
+          0.5908203125
+        ],
+        "max": [
+          -1.1328125,
+          1.44140625,
+          15.9375
+        ],
+        "center": [
+          -1.432684341328952,
+          0.21694195343488482,
+          1.2091202063430229
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1328125,
+          -1.44140625,
+          0.5908203125
+        ],
+        "max": [
+          19.671875,
+          2.25,
+          15.9375
+        ],
+        "center": [
+          1.432684341328952,
+          -0.21694195343488482,
+          1.2091202063430229
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000055.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000055.ply",
+      "vertices": 59884,
+      "bbox_before": {
+        "min": [
+          -14.0703125,
+          -2.046875,
+          0.479736328125
+        ],
+        "max": [
+          -1.119140625,
+          1.2568359375,
+          14.5
+        ],
+        "center": [
+          -1.4352117707515781,
+          0.18822840459266768,
+          1.183123553844725
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.119140625,
+          -1.2568359375,
+          0.479736328125
+        ],
+        "max": [
+          14.0703125,
+          2.046875,
+          14.5
+        ],
+        "center": [
+          1.4352117707515781,
+          -0.18822840459266768,
+          1.183123553844725
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000056.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000056.ply",
+      "vertices": 61844,
+      "bbox_before": {
+        "min": [
+          -12.359375,
+          -0.73486328125,
+          0.42431640625
+        ],
+        "max": [
+          -1.111328125,
+          1.3095703125,
+          13.0
+        ],
+        "center": [
+          -1.4360326771038823,
+          0.22460836895000788,
+          1.157478495854994
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.111328125,
+          -1.3095703125,
+          0.42431640625
+        ],
+        "max": [
+          12.359375,
+          0.73486328125,
+          13.0
+        ],
+        "center": [
+          1.4360326771038823,
+          -0.22460836895000788,
+          1.157478495854994
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000057.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000057.ply",
+      "vertices": 58967,
+      "bbox_before": {
+        "min": [
+          -16.859375,
+          -0.359375,
+          0.425048828125
+        ],
+        "max": [
+          -1.1708984375,
+          1.6279296875,
+          9.5
+        ],
+        "center": [
+          -1.460795935120491,
+          0.2212841285037183,
+          1.1340826506377508
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1708984375,
+          -1.6279296875,
+          0.425048828125
+        ],
+        "max": [
+          16.859375,
+          0.359375,
+          9.5
+        ],
+        "center": [
+          1.460795935120491,
+          -0.2212841285037183,
+          1.1340826506377508
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000058.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000058.ply",
+      "vertices": 50548,
+      "bbox_before": {
+        "min": [
+          -13.3046875,
+          -1.3701171875,
+          0.43798828125
+        ],
+        "max": [
+          -1.25,
+          1.3564453125,
+          13.375
+        ],
+        "center": [
+          -1.5388550664405614,
+          0.25640745576663587,
+          1.1145783617798923
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.25,
+          -1.3564453125,
+          0.43798828125
+        ],
+        "max": [
+          13.3046875,
+          1.3701171875,
+          13.375
+        ],
+        "center": [
+          1.5388550664405614,
+          -0.25640745576663587,
+          1.1145783617798923
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000059.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000059.ply",
+      "vertices": 48894,
+      "bbox_before": {
+        "min": [
+          -24.375,
+          -2.537109375,
+          0.463623046875
+        ],
+        "max": [
+          -1.27734375,
+          1.3173828125,
+          12.8828125
+        ],
+        "center": [
+          -1.5350029767839612,
+          0.26945507418267217,
+          1.0597072627376953
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.27734375,
+          -1.3173828125,
+          0.463623046875
+        ],
+        "max": [
+          24.375,
+          2.537109375,
+          12.8828125
+        ],
+        "center": [
+          1.5350029767839612,
+          -0.26945507418267217,
+          1.0597072627376953
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000060.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000060.ply",
+      "vertices": 47510,
+      "bbox_before": {
+        "min": [
+          -24.5625,
+          -4.04296875,
+          0.494384765625
+        ],
+        "max": [
+          -1.3056640625,
+          1.337890625,
+          20.4375
+        ],
+        "center": [
+          -1.5857873671332352,
+          0.2847982961747978,
+          1.0398779533256157
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3056640625,
+          -1.337890625,
+          0.494384765625
+        ],
+        "max": [
+          24.5625,
+          4.04296875,
+          20.4375
+        ],
+        "center": [
+          1.5857873671332352,
+          -0.2847982961747978,
+          1.0398779533256157
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000061.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000061.ply",
+      "vertices": 46412,
+      "bbox_before": {
+        "min": [
+          -21.359375,
+          -2.908203125,
+          0.53271484375
+        ],
+        "max": [
+          -1.5302734375,
+          1.4833984375,
+          15.125
+        ],
+        "center": [
+          -1.6583083939431074,
+          0.3182001527564563,
+          1.019906508637987
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.5302734375,
+          -1.4833984375,
+          0.53271484375
+        ],
+        "max": [
+          21.359375,
+          2.908203125,
+          15.125
+        ],
+        "center": [
+          1.6583083939431074,
+          -0.3182001527564563,
+          1.019906508637987
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000062.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000062.ply",
+      "vertices": 44969,
+      "bbox_before": {
+        "min": [
+          -23.15625,
+          -4.15625,
+          0.55322265625
+        ],
+        "max": [
+          -1.5390625,
+          1.353515625,
+          12.59375
+        ],
+        "center": [
+          -1.694160382534357,
+          0.34462860614030205,
+          0.96439145274036
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.5390625,
+          -1.353515625,
+          0.55322265625
+        ],
+        "max": [
+          23.15625,
+          4.15625,
+          12.59375
+        ],
+        "center": [
+          1.694160382534357,
+          -0.34462860614030205,
+          0.96439145274036
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000063.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000063.ply",
+      "vertices": 43904,
+      "bbox_before": {
+        "min": [
+          -23.484375,
+          -4.18359375,
+          0.471435546875
+        ],
+        "max": [
+          -1.5205078125,
+          1.3837890625,
+          12.4765625
+        ],
+        "center": [
+          -1.704611908937682,
+          0.3636291827802864,
+          0.8918989086985241
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.5205078125,
+          -1.3837890625,
+          0.471435546875
+        ],
+        "max": [
+          23.484375,
+          4.18359375,
+          12.4765625
+        ],
+        "center": [
+          1.704611908937682,
+          -0.3636291827802864,
+          0.8918989086985241
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000064.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000064.ply",
+      "vertices": 42881,
+      "bbox_before": {
+        "min": [
+          -24.015625,
+          -3.412109375,
+          0.389892578125
+        ],
+        "max": [
+          -1.314453125,
+          1.4833984375,
+          12.0234375
+        ],
+        "center": [
+          -1.7310304653066044,
+          0.3951533920394008,
+          0.8505137560013467
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.314453125,
+          -1.4833984375,
+          0.389892578125
+        ],
+        "max": [
+          24.015625,
+          3.412109375,
+          12.0234375
+        ],
+        "center": [
+          1.7310304653066044,
+          -0.3951533920394008,
+          0.8505137560013467
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000065.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000065.ply",
+      "vertices": 44316,
+      "bbox_before": {
+        "min": [
+          -23.640625,
+          -3.162109375,
+          0.34814453125
+        ],
+        "max": [
+          -1.203125,
+          1.4404296875,
+          13.4375
+        ],
+        "center": [
+          -1.7436802858307383,
+          0.4548166915253161,
+          0.8472859568302785
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.203125,
+          -1.4404296875,
+          0.34814453125
+        ],
+        "max": [
+          23.640625,
+          3.162109375,
+          13.4375
+        ],
+        "center": [
+          1.7436802858307383,
+          -0.4548166915253161,
+          0.8472859568302785
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000066.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000066.ply",
+      "vertices": 45190,
+      "bbox_before": {
+        "min": [
+          -23.234375,
+          -2.17578125,
+          0.3046875
+        ],
+        "max": [
+          -1.1591796875,
+          1.4482421875,
+          8.9140625
+        ],
+        "center": [
+          -1.7050803076247512,
+          0.4537503431423176,
+          0.8120096333709061
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.1591796875,
+          -1.4482421875,
+          0.3046875
+        ],
+        "max": [
+          23.234375,
+          2.17578125,
+          8.9140625
+        ],
+        "center": [
+          1.7050803076247512,
+          -0.4537503431423176,
+          0.8120096333709061
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000067.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000067.ply",
+      "vertices": 43207,
+      "bbox_before": {
+        "min": [
+          -19.640625,
+          -1.5986328125,
+          0.27294921875
+        ],
+        "max": [
+          -1.3623046875,
+          1.42578125,
+          4.5546875
+        ],
+        "center": [
+          -1.7200862499493716,
+          0.4260706431804352,
+          0.7548615666659916
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3623046875,
+          -1.42578125,
+          0.27294921875
+        ],
+        "max": [
+          19.640625,
+          1.5986328125,
+          4.5546875
+        ],
+        "center": [
+          1.7200862499493716,
+          -0.4260706431804352,
+          0.7548615666659916
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000068.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000068.ply",
+      "vertices": 46063,
+      "bbox_before": {
+        "min": [
+          -8.1015625,
+          -0.28759765625,
+          0.2413330078125
+        ],
+        "max": [
+          -1.2265625,
+          1.4921875,
+          4.78125
+        ],
+        "center": [
+          -1.722705689761848,
+          0.44331152947962504,
+          0.7871737770739937
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.2265625,
+          -1.4921875,
+          0.2413330078125
+        ],
+        "max": [
+          8.1015625,
+          0.28759765625,
+          4.78125
+        ],
+        "center": [
+          1.722705689761848,
+          -0.44331152947962504,
+          0.7871737770739937
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000069.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000069.ply",
+      "vertices": 46886,
+      "bbox_before": {
+        "min": [
+          -23.875,
+          -3.44140625,
+          0.2237548828125
+        ],
+        "max": [
+          -1.4091796875,
+          1.466796875,
+          8.65625
+        ],
+        "center": [
+          -1.7093793031568592,
+          0.41920432604816604,
+          0.7610011605818168
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.4091796875,
+          -1.466796875,
+          0.2237548828125
+        ],
+        "max": [
+          23.875,
+          3.44140625,
+          8.65625
+        ],
+        "center": [
+          1.7093793031568592,
+          -0.41920432604816604,
+          0.7610011605818168
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000070.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000070.ply",
+      "vertices": 47225,
+      "bbox_before": {
+        "min": [
+          -21.09375,
+          -3.423828125,
+          0.222900390625
+        ],
+        "max": [
+          -1.4892578125,
+          1.4326171875,
+          8.265625
+        ],
+        "center": [
+          -1.7208938260984648,
+          0.39587876249252646,
+          0.7579908583617324
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.4892578125,
+          -1.4326171875,
+          0.222900390625
+        ],
+        "max": [
+          21.09375,
+          3.423828125,
+          8.265625
+        ],
+        "center": [
+          1.7208938260984648,
+          -0.39587876249252646,
+          0.7579908583617324
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000071.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000071.ply",
+      "vertices": 47022,
+      "bbox_before": {
+        "min": [
+          -25.703125,
+          -4.296875,
+          0.2252197265625
+        ],
+        "max": [
+          -1.5068359375,
+          1.4423828125,
+          10.8125
+        ],
+        "center": [
+          -1.7317406779007698,
+          0.3730637224388013,
+          0.7435053489963807
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.5068359375,
+          -1.4423828125,
+          0.2252197265625
+        ],
+        "max": [
+          25.703125,
+          4.296875,
+          10.8125
+        ],
+        "center": [
+          1.7317406779007698,
+          -0.3730637224388013,
+          0.7435053489963807
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000072.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000072.ply",
+      "vertices": 45064,
+      "bbox_before": {
+        "min": [
+          -23.640625,
+          -4.37890625,
+          0.2403564453125
+        ],
+        "max": [
+          -1.5126953125,
+          1.4541015625,
+          10.328125
+        ],
+        "center": [
+          -1.7578155122090249,
+          0.35305309181640443,
+          0.7365742213938093
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.5126953125,
+          -1.4541015625,
+          0.2403564453125
+        ],
+        "max": [
+          23.640625,
+          4.37890625,
+          10.328125
+        ],
+        "center": [
+          1.7578155122090249,
+          -0.35305309181640443,
+          0.7365742213938093
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000073.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000073.ply",
+      "vertices": 44407,
+      "bbox_before": {
+        "min": [
+          -23.5625,
+          -3.828125,
+          0.25732421875
+        ],
+        "max": [
+          -1.5068359375,
+          1.3935546875,
+          9.859375
+        ],
+        "center": [
+          -1.728022274782129,
+          0.31551063267330515,
+          0.7067114432092632
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.5068359375,
+          -1.3935546875,
+          0.25732421875
+        ],
+        "max": [
+          23.5625,
+          3.828125,
+          9.859375
+        ],
+        "center": [
+          1.728022274782129,
+          -0.31551063267330515,
+          0.7067114432092632
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000074.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000074.ply",
+      "vertices": 44612,
+      "bbox_before": {
+        "min": [
+          -22.109375,
+          -3.833984375,
+          0.2470703125
+        ],
+        "max": [
+          -1.4404296875,
+          1.333984375,
+          11.671875
+        ],
+        "center": [
+          -1.680291207907906,
+          0.2896077257883257,
+          0.6833832736593783
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.4404296875,
+          -1.333984375,
+          0.2470703125
+        ],
+        "max": [
+          22.109375,
+          3.833984375,
+          11.671875
+        ],
+        "center": [
+          1.680291207907906,
+          -0.2896077257883257,
+          0.6833832736593783
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000075.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000075.ply",
+      "vertices": 45420,
+      "bbox_before": {
+        "min": [
+          -22.75,
+          -3.609375,
+          0.203857421875
+        ],
+        "max": [
+          -1.3837890625,
+          1.3271484375,
+          12.28125
+        ],
+        "center": [
+          -1.6511824103506165,
+          0.28155422504812494,
+          0.6763421499167492
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3837890625,
+          -1.3271484375,
+          0.203857421875
+        ],
+        "max": [
+          22.75,
+          3.609375,
+          12.28125
+        ],
+        "center": [
+          1.6511824103506165,
+          -0.28155422504812494,
+          0.6763421499167492
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000076.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000076.ply",
+      "vertices": 47986,
+      "bbox_before": {
+        "min": [
+          -25.03125,
+          -4.88671875,
+          0.145751953125
+        ],
+        "max": [
+          -1.38671875,
+          1.328125,
+          13.5234375
+        ],
+        "center": [
+          -1.6399358341495436,
+          0.29287630801415904,
+          0.675312905086412
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.38671875,
+          -1.328125,
+          0.145751953125
+        ],
+        "max": [
+          25.03125,
+          4.88671875,
+          13.5234375
+        ],
+        "center": [
+          1.6399358341495436,
+          -0.29287630801415904,
+          0.675312905086412
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000077.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000077.ply",
+      "vertices": 50362,
+      "bbox_before": {
+        "min": [
+          -27.8125,
+          -5.07421875,
+          0.12030029296875
+        ],
+        "max": [
+          -1.3916015625,
+          1.37890625,
+          12.546875
+        ],
+        "center": [
+          -1.6464827849494659,
+          0.3241179412546924,
+          0.6773857564203913
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3916015625,
+          -1.37890625,
+          0.12030029296875
+        ],
+        "max": [
+          27.8125,
+          5.07421875,
+          12.546875
+        ],
+        "center": [
+          1.6464827849494659,
+          -0.3241179412546924,
+          0.6773857564203913
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000078.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000078.ply",
+      "vertices": 53384,
+      "bbox_before": {
+        "min": [
+          -26.734375,
+          -4.84765625,
+          0.153564453125
+        ],
+        "max": [
+          -1.3447265625,
+          1.44921875,
+          16.6875
+        ],
+        "center": [
+          -1.599638296499185,
+          0.3619498601715041,
+          0.6634466627736365
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3447265625,
+          -1.44921875,
+          0.153564453125
+        ],
+        "max": [
+          26.734375,
+          4.84765625,
+          16.6875
+        ],
+        "center": [
+          1.599638296499185,
+          -0.3619498601715041,
+          0.6634466627736365
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000079.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000079.ply",
+      "vertices": 57025,
+      "bbox_before": {
+        "min": [
+          -24.796875,
+          -4.54296875,
+          0.2364501953125
+        ],
+        "max": [
+          -1.2685546875,
+          1.4052734375,
+          12.1171875
+        ],
+        "center": [
+          -1.5704734080447171,
+          0.41952569130427586,
+          0.6671986442007344
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.2685546875,
+          -1.4052734375,
+          0.2364501953125
+        ],
+        "max": [
+          24.796875,
+          4.54296875,
+          12.1171875
+        ],
+        "center": [
+          1.5704734080447171,
+          -0.41952569130427586,
+          0.6671986442007344
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000080.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000080.ply",
+      "vertices": 59854,
+      "bbox_before": {
+        "min": [
+          -9.109375,
+          -0.6142578125,
+          0.31201171875
+        ],
+        "max": [
+          -1.3046875,
+          1.4599609375,
+          5.93359375
+        ],
+        "center": [
+          -1.5272901201517441,
+          0.5026207015579437,
+          0.6737592236160073
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3046875,
+          -1.4599609375,
+          0.31201171875
+        ],
+        "max": [
+          9.109375,
+          0.6142578125,
+          5.93359375
+        ],
+        "center": [
+          1.5272901201517441,
+          -0.5026207015579437,
+          0.6737592236160073
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000081.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000081.ply",
+      "vertices": 60629,
+      "bbox_before": {
+        "min": [
+          -27.75,
+          -4.83984375,
+          0.3505859375
+        ],
+        "max": [
+          -1.3193359375,
+          1.521484375,
+          15.953125
+        ],
+        "center": [
+          -1.572887217364009,
+          0.5495974954722312,
+          0.7095193429247967
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3193359375,
+          -1.521484375,
+          0.3505859375
+        ],
+        "max": [
+          27.75,
+          4.83984375,
+          15.953125
+        ],
+        "center": [
+          1.572887217364009,
+          -0.5495974954722312,
+          0.7095193429247967
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000082.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000082.ply",
+      "vertices": 62765,
+      "bbox_before": {
+        "min": [
+          -27.421875,
+          -3.884765625,
+          0.375244140625
+        ],
+        "max": [
+          -1.3427734375,
+          1.544921875,
+          14.984375
+        ],
+        "center": [
+          -1.5510836708605513,
+          0.5585233830331588,
+          0.7066019296931012
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.3427734375,
+          -1.544921875,
+          0.375244140625
+        ],
+        "max": [
+          27.421875,
+          3.884765625,
+          14.984375
+        ],
+        "center": [
+          1.5510836708605513,
+          -0.5585233830331588,
+          0.7066019296931012
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000083.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000083.ply",
+      "vertices": 64719,
+      "bbox_before": {
+        "min": [
+          -27.328125,
+          -4.29296875,
+          0.387451171875
+        ],
+        "max": [
+          -1.322265625,
+          1.52734375,
+          15.21875
+        ],
+        "center": [
+          -1.5137592720549606,
+          0.5458895417243479,
+          0.6830856339038768
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.322265625,
+          -1.52734375,
+          0.387451171875
+        ],
+        "max": [
+          27.328125,
+          4.29296875,
+          15.21875
+        ],
+        "center": [
+          1.5137592720549606,
+          -0.5458895417243479,
+          0.6830856339038768
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000084.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000084.ply",
+      "vertices": 65272,
+      "bbox_before": {
+        "min": [
+          -23.09375,
+          -4.08203125,
+          0.37646484375
+        ],
+        "max": [
+          -1.2763671875,
+          1.49609375,
+          11.8671875
+        ],
+        "center": [
+          -1.452933254305062,
+          0.5254515250686468,
+          0.6374583608424171
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.2763671875,
+          -1.49609375,
+          0.37646484375
+        ],
+        "max": [
+          23.09375,
+          4.08203125,
+          11.8671875
+        ],
+        "center": [
+          1.452933254305062,
+          -0.5254515250686468,
+          0.6374583608424171
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    },
+    {
+      "input": "/mnt/d/develop/master_thesis/Scene360/data/case1/object_multiface_sharp/8k/obj002/seq/frame_000085.ply",
+      "output": "/mnt/d/develop/master_thesis/Scene360/viewer_supersplat/static/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/frame_000085.ply",
+      "vertices": 64062,
+      "bbox_before": {
+        "min": [
+          -24.671875,
+          -2.01171875,
+          0.350341796875
+        ],
+        "max": [
+          -1.236328125,
+          1.4580078125,
+          7.609375
+        ],
+        "center": [
+          -1.4163878535149543,
+          0.5344340773498505,
+          0.5935556958920167
+        ]
+      },
+      "bbox_after": {
+        "min": [
+          1.236328125,
+          -1.4580078125,
+          0.350341796875
+        ],
+        "max": [
+          24.671875,
+          2.01171875,
+          7.609375
+        ],
+        "center": [
+          1.4163878535149543,
+          -0.5344340773498505,
+          0.5935556958920167
+        ]
+      },
+      "gaussian_rotations_transformed": true,
+      "normals_transformed": false
+    }
+  ]
+}

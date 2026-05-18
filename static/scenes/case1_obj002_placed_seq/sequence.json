@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "name": "case1_obj002_placed_seq",
+  "fps": 12.0,
+  "autoplay": true,
+  "frames": [
+    {
+      "index": 0,
+      "filename": "frame_000000.ply",
+      "url": "assets/frame_000000.ply"
+    },
+    {
+      "index": 1,
+      "filename": "frame_000001.ply",
+      "url": "assets/frame_000001.ply"
+    },
+    {
+      "index": 2,
+      "filename": "frame_000002.ply",
+      "url": "assets/frame_000002.ply"
+    },
+    {
+      "index": 3,
+      "filename": "frame_000003.ply",
+      "url": "assets/frame_000003.ply"
+    },
+    {
+      "index": 4,
+      "filename": "frame_000004.ply",
+      "url": "assets/frame_000004.ply"
+    },
+    {
+      "index": 5,
+      "filename": "frame_000005.ply",
+      "url": "assets/frame_000005.ply"
+    },
+    {
+      "index": 6,
+      "filename": "frame_000006.ply",
+      "url": "assets/frame_000006.ply"
+    },
+    {
+      "index": 7,
+      "filename": "frame_000007.ply",
+      "url": "assets/frame_000007.ply"
+    },
+    {
+      "index": 8,
+      "filename": "frame_000008.ply",
+      "url": "assets/frame_000008.ply"
+    },
+    {
+      "index": 9,
+      "filename": "frame_000009.ply",
+      "url": "assets/frame_000009.ply"
+    },
+    {
+      "index": 10,
+      "filename": "frame_000010.ply",
+      "url": "assets/frame_000010.ply"
+    },
+    {
+      "index": 11,
+      "filename": "frame_000011.ply",
+      "url": "assets/frame_000011.ply"
+    },
+    {
+      "index": 12,
+      "filename": "frame_000012.ply",
+      "url": "assets/frame_000012.ply"
+    },
+    {
+      "index": 13,
+      "filename": "frame_000013.ply",
+      "url": "assets/frame_000013.ply"
+    },
+    {
+      "index": 14,
+      "filename": "frame_000014.ply",
+      "url": "assets/frame_000014.ply"
+    },
+    {
+      "index": 15,
+      "filename": "frame_000015.ply",
+      "url": "assets/frame_000015.ply"
+    },
+    {
+      "index": 16,
+      "filename": "frame_000016.ply",
+      "url": "assets/frame_000016.ply"
+    },
+    {
+      "index": 17,
+      "filename": "frame_000017.ply",
+      "url": "assets/frame_000017.ply"
+    },
+    {
+      "index": 18,
+      "filename": "frame_000018.ply",
+      "url": "assets/frame_000018.ply"
+    },
+    {
+      "index": 19,
+      "filename": "frame_000019.ply",
+      "url": "assets/frame_000019.ply"
+    },
+    {
+      "index": 20,
+      "filename": "frame_000020.ply",
+      "url": "assets/frame_000020.ply"
+    },
+    {
+      "index": 21,
+      "filename": "frame_000021.ply",
+      "url": "assets/frame_000021.ply"
+    },
+    {
+      "index": 22,
+      "filename": "frame_000022.ply",
+      "url": "assets/frame_000022.ply"
+    },
+    {
+      "index": 23,
+      "filename": "frame_000023.ply",
+      "url": "assets/frame_000023.ply"
+    },
+    {
+      "index": 24,
+      "filename": "frame_000024.ply",
+      "url": "assets/frame_000024.ply"
+    },
+    {
+      "index": 25,
+      "filename": "frame_000025.ply",
+      "url": "assets/frame_000025.ply"
+    },
+    {
+      "index": 26,
+      "filename": "frame_000026.ply",
+      "url": "assets/frame_000026.ply"
+    },
+    {
+      "index": 27,
+      "filename": "frame_000027.ply",
+      "url": "assets/frame_000027.ply"
+    },
+    {
+      "index": 28,
+      "filename": "frame_000028.ply",
+      "url": "assets/frame_000028.ply"
+    },
+    {
+      "index": 29,
+      "filename": "frame_000029.ply",
+      "url": "assets/frame_000029.ply"
+    },
+    {
+      "index": 30,
+      "filename": "frame_000030.ply",
+      "url": "assets/frame_000030.ply"
+    },
+    {
+      "index": 31,
+      "filename": "frame_000031.ply",
+      "url": "assets/frame_000031.ply"
+    },
+    {
+      "index": 32,
+      "filename": "frame_000032.ply",
+      "url": "assets/frame_000032.ply"
+    },
+    {
+      "index": 33,
+      "filename": "frame_000033.ply",
+      "url": "assets/frame_000033.ply"
+    },
+    {
+      "index": 34,
+      "filename": "frame_000034.ply",
+      "url": "assets/frame_000034.ply"
+    },
+    {
+      "index": 35,
+      "filename": "frame_000035.ply",
+      "url": "assets/frame_000035.ply"
+    },
+    {
+      "index": 36,
+      "filename": "frame_000036.ply",
+      "url": "assets/frame_000036.ply"
+    },
+    {
+      "index": 37,
+      "filename": "frame_000037.ply",
+      "url": "assets/frame_000037.ply"
+    },
+    {
+      "index": 38,
+      "filename": "frame_000038.ply",
+      "url": "assets/frame_000038.ply"
+    },
+    {
+      "index": 39,
+      "filename": "frame_000039.ply",
+      "url": "assets/frame_000039.ply"
+    },
+    {
+      "index": 40,
+      "filename": "frame_000040.ply",
+      "url": "assets/frame_000040.ply"
+    },
+    {
+      "index": 41,
+      "filename": "frame_000041.ply",
+      "url": "assets/frame_000041.ply"
+    },
+    {
+      "index": 42,
+      "filename": "frame_000042.ply",
+      "url": "assets/frame_000042.ply"
+    },
+    {
+      "index": 43,
+      "filename": "frame_000043.ply",
+      "url": "assets/frame_000043.ply"
+    },
+    {
+      "index": 44,
+      "filename": "frame_000044.ply",
+      "url": "assets/frame_000044.ply"
+    },
+    {
+      "index": 45,
+      "filename": "frame_000045.ply",
+      "url": "assets/frame_000045.ply"
+    },
+    {
+      "index": 46,
+      "filename": "frame_000046.ply",
+      "url": "assets/frame_000046.ply"
+    },
+    {
+      "index": 47,
+      "filename": "frame_000047.ply",
+      "url": "assets/frame_000047.ply"
+    },
+    {
+      "index": 48,
+      "filename": "frame_000048.ply",
+      "url": "assets/frame_000048.ply"
+    },
+    {
+      "index": 49,
+      "filename": "frame_000049.ply",
+      "url": "assets/frame_000049.ply"
+    },
+    {
+      "index": 50,
+      "filename": "frame_000050.ply",
+      "url": "assets/frame_000050.ply"
+    },
+    {
+      "index": 51,
+      "filename": "frame_000051.ply",
+      "url": "assets/frame_000051.ply"
+    },
+    {
+      "index": 52,
+      "filename": "frame_000052.ply",
+      "url": "assets/frame_000052.ply"
+    },
+    {
+      "index": 53,
+      "filename": "frame_000053.ply",
+      "url": "assets/frame_000053.ply"
+    },
+    {
+      "index": 54,
+      "filename": "frame_000054.ply",
+      "url": "assets/frame_000054.ply"
+    },
+    {
+      "index": 55,
+      "filename": "frame_000055.ply",
+      "url": "assets/frame_000055.ply"
+    },
+    {
+      "index": 56,
+      "filename": "frame_000056.ply",
+      "url": "assets/frame_000056.ply"
+    },
+    {
+      "index": 57,
+      "filename": "frame_000057.ply",
+      "url": "assets/frame_000057.ply"
+    },
+    {
+      "index": 58,
+      "filename": "frame_000058.ply",
+      "url": "assets/frame_000058.ply"
+    },
+    {
+      "index": 59,
+      "filename": "frame_000059.ply",
+      "url": "assets/frame_000059.ply"
+    },
+    {
+      "index": 60,
+      "filename": "frame_000060.ply",
+      "url": "assets/frame_000060.ply"
+    },
+    {
+      "index": 61,
+      "filename": "frame_000061.ply",
+      "url": "assets/frame_000061.ply"
+    },
+    {
+      "index": 62,
+      "filename": "frame_000062.ply",
+      "url": "assets/frame_000062.ply"
+    },
+    {
+      "index": 63,
+      "filename": "frame_000063.ply",
+      "url": "assets/frame_000063.ply"
+    },
+    {
+      "index": 64,
+      "filename": "frame_000064.ply",
+      "url": "assets/frame_000064.ply"
+    },
+    {
+      "index": 65,
+      "filename": "frame_000065.ply",
+      "url": "assets/frame_000065.ply"
+    },
+    {
+      "index": 66,
+      "filename": "frame_000066.ply",
+      "url": "assets/frame_000066.ply"
+    },
+    {
+      "index": 67,
+      "filename": "frame_000067.ply",
+      "url": "assets/frame_000067.ply"
+    },
+    {
+      "index": 68,
+      "filename": "frame_000068.ply",
+      "url": "assets/frame_000068.ply"
+    },
+    {
+      "index": 69,
+      "filename": "frame_000069.ply",
+      "url": "assets/frame_000069.ply"
+    },
+    {
+      "index": 70,
+      "filename": "frame_000070.ply",
+      "url": "assets/frame_000070.ply"
+    },
+    {
+      "index": 71,
+      "filename": "frame_000071.ply",
+      "url": "assets/frame_000071.ply"
+    },
+    {
+      "index": 72,
+      "filename": "frame_000072.ply",
+      "url": "assets/frame_000072.ply"
+    },
+    {
+      "index": 73,
+      "filename": "frame_000073.ply",
+      "url": "assets/frame_000073.ply"
+    },
+    {
+      "index": 74,
+      "filename": "frame_000074.ply",
+      "url": "assets/frame_000074.ply"
+    },
+    {
+      "index": 75,
+      "filename": "frame_000075.ply",
+      "url": "assets/frame_000075.ply"
+    },
+    {
+      "index": 76,
+      "filename": "frame_000076.ply",
+      "url": "assets/frame_000076.ply"
+    },
+    {
+      "index": 77,
+      "filename": "frame_000077.ply",
+      "url": "assets/frame_000077.ply"
+    },
+    {
+      "index": 78,
+      "filename": "frame_000078.ply",
+      "url": "assets/frame_000078.ply"
+    },
+    {
+      "index": 79,
+      "filename": "frame_000079.ply",
+      "url": "assets/frame_000079.ply"
+    },
+    {
+      "index": 80,
+      "filename": "frame_000080.ply",
+      "url": "assets/frame_000080.ply"
+    },
+    {
+      "index": 81,
+      "filename": "frame_000081.ply",
+      "url": "assets/frame_000081.ply"
+    },
+    {
+      "index": 82,
+      "filename": "frame_000082.ply",
+      "url": "assets/frame_000082.ply"
+    },
+    {
+      "index": 83,
+      "filename": "frame_000083.ply",
+      "url": "assets/frame_000083.ply"
+    },
+    {
+      "index": 84,
+      "filename": "frame_000084.ply",
+      "url": "assets/frame_000084.ply"
+    },
+    {
+      "index": 85,
+      "filename": "frame_000085.ply",
+      "url": "assets/frame_000085.ply"
+    },
+    {
+      "index": 86,
+      "filename": "frame_000086.ply",
+      "url": "assets/frame_000086.ply"
+    },
+    {
+      "index": 87,
+      "filename": "frame_000087.ply",
+      "url": "assets/frame_000087.ply"
+    },
+    {
+      "index": 88,
+      "filename": "frame_000088.ply",
+      "url": "assets/frame_000088.ply"
+    },
+    {
+      "index": 89,
+      "filename": "frame_000089.ply",
+      "url": "assets/frame_000089.ply"
+    },
+    {
+      "index": 90,
+      "filename": "frame_000090.ply",
+      "url": "assets/frame_000090.ply"
+    }
+  ]
+}

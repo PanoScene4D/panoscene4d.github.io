@@ -1,0 +1,1 @@
+http://127.0.0.1:3000/?load=/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/assets/background.ply&filename=background.ply&sequence=/scenes/case1_obj002_sharp8k_cube6_staticworld_z180/sequence.json
