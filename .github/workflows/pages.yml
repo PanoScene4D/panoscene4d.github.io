@@ -48,7 +48,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_HREF: /${{ github.event.repository.name }}/
+          BASE_HREF: /
           SKIP_SCENES_COPY: '1'
 
       - name: Setup Pages
