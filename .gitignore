@@ -19,3 +19,5 @@ webxr_viewer/scenes/*
 !webxr_viewer/scenes/case1_static_compressed/**
 !webxr_viewer/scenes/girl_ply_seq_sam3_rotx_y135_staticworld/
 !webxr_viewer/scenes/girl_ply_seq_sam3_rotx_y135_staticworld/**
+!webxr_viewer/scenes/boy_on_sports_field/
+!webxr_viewer/scenes/boy_on_sports_field/**
