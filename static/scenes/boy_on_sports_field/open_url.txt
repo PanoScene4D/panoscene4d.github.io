@@ -1,0 +1,1 @@
+http://127.0.0.1:3000/?load=/scenes/scenes/boy_on_sports_field/assets/background.ply&filename=background.ply&sequence=/scenes/scenes/boy_on_sports_field/sequence.json
