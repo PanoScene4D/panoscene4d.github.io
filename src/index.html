@@ -9,6 +9,222 @@
         <link rel="shortcut icon" href="#">
         <meta name="description" content="SuperSplat is an advanced browser-based editor for manipulating and optimizing 3D Gaussian Splats. It is open source and engine agnostic." />
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <style>
+            html,
+            body {
+                min-height: 100%;
+            }
+
+            body.scene-browser-mode {
+                margin: 0;
+                overflow: auto;
+                color: #111827;
+                background: #f5f6f8;
+                font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                letter-spacing: 0;
+            }
+
+            .scene-browser {
+                min-height: 100vh;
+                box-sizing: border-box;
+                padding: 28px;
+            }
+
+            .scene-browser__shell {
+                width: min(1180px, 100%);
+                margin: 0 auto;
+            }
+
+            .scene-browser__topbar {
+                display: grid;
+                grid-template-columns: 1fr minmax(220px, 340px);
+                gap: 16px;
+                align-items: end;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #d9dee7;
+            }
+
+            .scene-browser__kicker {
+                margin: 0 0 5px;
+                color: #536273;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .scene-browser__title {
+                margin: 0;
+                color: #111827;
+                font-size: 28px;
+                line-height: 1.15;
+                font-weight: 760;
+            }
+
+            .scene-browser__search {
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+                border: 1px solid #c8d0dc;
+                border-radius: 6px;
+                padding: 0 12px;
+                color: #111827;
+                background: #ffffff;
+                font: inherit;
+                outline: none;
+            }
+
+            .scene-browser__search:focus {
+                border-color: #2563eb;
+                box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+            }
+
+            .scene-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 14px;
+                margin-top: 18px;
+            }
+
+            .scene-card {
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                min-height: 212px;
+                box-sizing: border-box;
+                border: 1px solid #dbe1ea;
+                border-radius: 8px;
+                background: #ffffff;
+                overflow: hidden;
+            }
+
+            .scene-card__preview {
+                position: relative;
+                height: 74px;
+                background:
+                    linear-gradient(135deg, rgba(37, 99, 235, 0.24), transparent 44%),
+                    linear-gradient(45deg, rgba(5, 150, 105, 0.26), transparent 45%),
+                    #e8edf4;
+            }
+
+            .scene-card__preview::after {
+                content: "";
+                position: absolute;
+                inset: 14px;
+                border: 1px solid rgba(17, 24, 39, 0.12);
+                border-radius: 6px;
+                background:
+                    repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.11) 0 1px, transparent 1px 16px),
+                    repeating-linear-gradient(0deg, rgba(17, 24, 39, 0.08) 0 1px, transparent 1px 16px);
+            }
+
+            .scene-card__body {
+                display: grid;
+                gap: 10px;
+                padding: 14px;
+            }
+
+            .scene-card__title {
+                margin: 0;
+                color: #111827;
+                font-size: 17px;
+                line-height: 1.25;
+                font-weight: 720;
+                overflow-wrap: anywhere;
+            }
+
+            .scene-card__path {
+                margin: 0;
+                color: #66758a;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+                font-size: 11px;
+                line-height: 1.35;
+                overflow-wrap: anywhere;
+            }
+
+            .scene-card__meta {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+
+            .scene-chip {
+                display: inline-flex;
+                align-items: center;
+                min-height: 22px;
+                border-radius: 999px;
+                padding: 0 8px;
+                background: #eef2f7;
+                color: #425166;
+                font-size: 12px;
+                font-weight: 650;
+            }
+
+            .scene-chip--bg {
+                background: #e6f4ef;
+                color: #10684b;
+            }
+
+            .scene-card__actions {
+                display: flex;
+                gap: 8px;
+                padding: 0 14px 14px;
+            }
+
+            .scene-button {
+                height: 36px;
+                border: 1px solid transparent;
+                border-radius: 6px;
+                padding: 0 12px;
+                color: #ffffff;
+                background: #2563eb;
+                font: inherit;
+                font-size: 14px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .scene-button:hover {
+                background: #1d4ed8;
+            }
+
+            .scene-button--secondary {
+                color: #1f2937;
+                background: #ffffff;
+                border-color: #c8d0dc;
+            }
+
+            .scene-button--secondary:hover {
+                background: #eef2f7;
+            }
+
+            .scene-empty {
+                display: none;
+                margin-top: 18px;
+                border: 1px dashed #bac4d3;
+                border-radius: 8px;
+                padding: 22px;
+                color: #536273;
+                background: #ffffff;
+            }
+
+            .scene-empty.is-visible {
+                display: block;
+            }
+
+            @media (max-width: 720px) {
+                .scene-browser {
+                    padding: 18px;
+                }
+
+                .scene-browser__topbar {
+                    grid-template-columns: 1fr;
+                    align-items: stretch;
+                }
+
+                .scene-browser__title {
+                    font-size: 23px;
+                }
+            }
+        </style>
 
         <!-- Disable service worker for local WebXR testing to avoid stale model/bundle caches. -->
         <script>
@@ -18,15 +234,129 @@
                     .then(registrations => registrations.forEach(registration => registration.unregister()))
                     .catch(err => console.log('failed to unregister service worker', err));
             }
-
-            const params = new URLSearchParams(window.location.search);
-            if (!params.has('sequence') && !params.has('load')) {
-                window.location.replace('./?sequence=/scenes/boy_on_sports_field/sequence.json&deferLoad=/scenes/boy_on_sports_field/assets/background.ply&deferFilename=background.ply');
-            }
         </script>
     </head>
 
     <body>
-        <script type="module" src="./index.js?v=20260518-xr-alpha-clip"></script>
+        <script type="module">
+            const hasViewerParams = (params) => {
+                return ['load', 'sequence', 'deferLoad'].some((name) => params.has(name));
+            };
+
+            const sceneCatalog = [
+                {
+                    title: 'Boy on Sports Field',
+                    id: 'boy_on_sports_field',
+                    sequence: '/scenes/boy_on_sports_field/sequence.json',
+                    deferLoad: '/scenes/boy_on_sports_field/assets/background.ply',
+                    deferFilename: 'background.ply',
+                    frames: 86,
+                    fps: 12,
+                    tags: ['PLY', 'Deferred background']
+                }
+            ];
+
+            const toSceneUrl = (scene) => {
+                const params = new URLSearchParams();
+                params.set('sequence', scene.sequence);
+                if (scene.deferLoad) {
+                    params.set('deferLoad', scene.deferLoad);
+                    params.set('deferFilename', scene.deferFilename || scene.deferLoad.split('/').pop());
+                }
+                return `./?${params.toString()}`;
+            };
+
+            const openScene = (scene) => {
+                window.location.assign(toSceneUrl(scene));
+            };
+
+            const mountSceneBrowser = () => {
+                document.body.classList.add('scene-browser-mode');
+                document.body.innerHTML = `
+                    <main class="scene-browser" aria-label="PanoScene4D scene browser">
+                        <div class="scene-browser__shell">
+                            <header class="scene-browser__topbar">
+                                <div>
+                                    <p class="scene-browser__kicker">PanoScene4D</p>
+                                    <h1 class="scene-browser__title">Scene Library</h1>
+                                </div>
+                                <input class="scene-browser__search" type="search" placeholder="Search scenes" aria-label="Search scenes">
+                            </header>
+                            <section class="scene-grid" aria-live="polite"></section>
+                            <div class="scene-empty">No matching scenes.</div>
+                        </div>
+                    </main>
+                `;
+
+                const grid = document.querySelector('.scene-grid');
+                const search = document.querySelector('.scene-browser__search');
+                const empty = document.querySelector('.scene-empty');
+
+                const render = () => {
+                    const query = search.value.trim().toLowerCase();
+                    const scenes = sceneCatalog.filter((scene) => {
+                        return [scene.title, scene.id, scene.sequence, ...(scene.tags || [])]
+                            .join(' ')
+                            .toLowerCase()
+                            .includes(query);
+                    });
+
+                    grid.innerHTML = '';
+                    empty.classList.toggle('is-visible', scenes.length === 0);
+
+                    for (const scene of scenes) {
+                        const card = document.createElement('article');
+                        card.className = 'scene-card';
+                        card.innerHTML = `
+                            <div class="scene-card__preview" aria-hidden="true"></div>
+                            <div class="scene-card__body">
+                                <h2 class="scene-card__title"></h2>
+                                <p class="scene-card__path"></p>
+                                <div class="scene-card__meta"></div>
+                            </div>
+                            <div class="scene-card__actions">
+                                <button class="scene-button" type="button">Open</button>
+                                <button class="scene-button scene-button--secondary" type="button">Copy URL</button>
+                            </div>
+                        `;
+
+                        card.querySelector('.scene-card__title').textContent = scene.title;
+                        card.querySelector('.scene-card__path').textContent = scene.sequence;
+
+                        const meta = card.querySelector('.scene-card__meta');
+                        const chips = [
+                            `${scene.frames} frames`,
+                            `${scene.fps} FPS`,
+                            ...(scene.tags || [])
+                        ];
+
+                        for (const chipText of chips) {
+                            const chip = document.createElement('span');
+                            chip.className = `scene-chip${chipText.includes('background') ? ' scene-chip--bg' : ''}`;
+                            chip.textContent = chipText;
+                            meta.appendChild(chip);
+                        }
+
+                        card.querySelector('.scene-button').addEventListener('click', () => openScene(scene));
+                        card.querySelector('.scene-button--secondary').addEventListener('click', async () => {
+                            const url = new URL(toSceneUrl(scene), window.location.href).href;
+                            await navigator.clipboard.writeText(url);
+                        });
+
+                        grid.appendChild(card);
+                    }
+                };
+
+                search.addEventListener('input', render);
+                render();
+            };
+
+            const params = new URLSearchParams(window.location.search);
+            if (hasViewerParams(params)) {
+                await import('./index.js?v=20260518-xr-alpha-clip');
+            } else {
+                mountSceneBrowser();
+            }
+        </script>
     </body>
 </html>
