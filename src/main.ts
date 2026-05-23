@@ -119,6 +119,23 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
     }
 };
 
+const importUrlParams = async (events: Events, url: URL, loadParam: string, filenameParam: string) => {
+    const loadList = url.searchParams.getAll(loadParam);
+    const filenameList = url.searchParams.getAll(filenameParam);
+
+    for (const [i, value] of loadList.entries()) {
+        const decoded = decodeURIComponent(value);
+        const filename = i < filenameList.length ?
+            decodeURIComponent(filenameList[i]) :
+            decoded.split('/').pop();
+
+        await events.invoke('import', [{
+            filename,
+            url: decoded
+        }]);
+    }
+};
+
 const main = async () => {
     // root events object
     const events = new Events();
@@ -366,25 +383,14 @@ const main = async () => {
     scene.start();
 
     // handle generic load params first so static splats can coexist with dynamic sequences
-    const loadList = url.searchParams.getAll('load');
-    const filenameList = url.searchParams.getAll('filename');
-    for (const [i, value] of loadList.entries()) {
-        const decoded = decodeURIComponent(value);
-        const filename = i < filenameList.length ?
-            decodeURIComponent(filenameList[i]) :
-            decoded.split('/').pop();
-
-        await events.invoke('import', [{
-            filename,
-            url: decoded
-        }]);
-    }
+    await importUrlParams(events, url, 'load', 'filename');
 
     const sequenceManifest = url.searchParams.get('sequence');
     if (sequenceManifest) {
         await loadSequenceManifest(events, decodeURIComponent(sequenceManifest));
     }
 
+    await importUrlParams(events, url, 'deferLoad', 'deferFilename');
 
     // handle OS-based file association in PWA mode
     if ('launchQueue' in window) {
