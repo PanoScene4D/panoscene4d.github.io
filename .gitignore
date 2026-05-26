@@ -9,6 +9,7 @@ webxr_viewer/sw.js
 webxr_viewer/sw.js.map
 webxr_viewer/manifest.json
 webxr_viewer/node-ponyfill-*.js
+webxr_viewer/node-ponyfill-*.js.map
 webxr_viewer/static/
 webxr_viewer/index.html
 
