@@ -1,5 +1,5 @@
 import { WebPCodec } from '@playcanvas/splat-transform';
-import { Color, createGraphicsDevice } from 'playcanvas';
+import { Color, Vec3, createGraphicsDevice } from 'playcanvas';
 
 import { registerCameraPosesEvents } from './camera-poses';
 import { registerDocEvents } from './doc';
@@ -52,6 +52,11 @@ type SequenceManifest = {
     name?: string;
     fps?: number;
     autoplay?: boolean;
+    camera?: {
+        position: [number, number, number];
+        target: [number, number, number];
+        fov?: number;
+    };
     frames?: {
         index?: number;
         filename?: string;
@@ -113,7 +118,24 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
     }
 
     events.fire('timeline.setFrame', 0);
-    events.fire('camera.focus');
+
+    const camera = manifest.camera;
+    const validVector = (value: unknown): value is [number, number, number] => (
+        Array.isArray(value) &&
+        value.length === 3 &&
+        value.every(component => typeof component === 'number' && Number.isFinite(component))
+    );
+
+    if (camera && validVector(camera.position) && validVector(camera.target)) {
+        const fov = typeof camera.fov === 'number' && Number.isFinite(camera.fov) ? camera.fov : undefined;
+        events.fire('camera.setPose', {
+            position: new Vec3(...camera.position),
+            target: new Vec3(...camera.target),
+            fov
+        }, 0);
+    } else {
+        events.fire('camera.focus');
+    }
 
     if (manifest.autoplay !== false && importFiles.length > 1) {
         events.fire('timeline.setPlaying', true);
