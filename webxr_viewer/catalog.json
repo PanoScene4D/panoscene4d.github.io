@@ -42,17 +42,5 @@
       "SHARP legacy",
       "MatAnyone2"
     ]
-  },
-  {
-    "title": "User Study Case 3",
-    "id": "user_study_case3",
-    "thumbnail": "/scenes/user_study_case3/assets/thumbnail.jpg",
-    "sequence": "/scenes/user_study_case3/sequence.json",
-    "frames": 100,
-    "fps": 12,
-    "tags": [
-      "SOG",
-      "Case 5"
-    ]
   }
 ]
