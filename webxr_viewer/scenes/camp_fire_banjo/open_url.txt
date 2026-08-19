@@ -1,0 +1,1 @@
+https://panoscene4d.github.io/?sequence=/scenes/camp_fire_banjo/sequence.json&deferLoad=/scenes/camp_fire_banjo/assets/background.sog&deferFilename=background.sog
