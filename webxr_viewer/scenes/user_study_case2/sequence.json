@@ -3,6 +3,11 @@
   "name": "User Study Case 2",
   "fps": 10.0,
   "autoplay": true,
+  "camera": {
+    "position": [-0.90752, 0.350303, 0.90752],
+    "target": [0.0, 0.124, 0.0],
+    "fov": 75.0
+  },
   "frames": [
     {
       "index": 0,
@@ -504,5 +509,9 @@
       "filename": "frame_000099.sog",
       "url": "assets/frame_000099.sog"
     }
-  ]
+  ],
+  "background": {
+    "filename": "background_no_icp.sog",
+    "url": "assets/background_no_icp.sog"
+  }
 }
