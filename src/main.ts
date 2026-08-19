@@ -133,8 +133,6 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
             target: new Vec3(...camera.target),
             fov
         }, 0);
-    } else {
-        events.fire('camera.focus');
     }
 
     if (manifest.autoplay !== false && importFiles.length > 1) {
