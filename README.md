@@ -76,7 +76,3 @@ https://panoscene4d.github.io/?xrScale=0.6
 ```
 
 Use `xrScale=1` for native headset resolution if performance allows.
-
-## GitHub Pages
-
-Push to `main`, then enable Pages with source `GitHub Actions` in repository settings.
