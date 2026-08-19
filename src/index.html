@@ -243,18 +243,14 @@
                 return ['load', 'sequence', 'deferLoad'].some((name) => params.has(name));
             };
 
-            const sceneCatalog = [
-                {
-                    title: 'Boy on Sports Field',
-                    id: 'boy_on_sports_field',
-                    sequence: '/scenes/boy_on_sports_field/sequence.json',
-                    deferLoad: '/scenes/boy_on_sports_field/assets/background.ply',
-                    deferFilename: 'background.ply',
-                    frames: 86,
-                    fps: 12,
-                    tags: ['PLY', 'Deferred background']
+            const loadSceneCatalog = async () => {
+                const response = await fetch('./catalog.json', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Failed to load scene catalog: ${response.status}`);
                 }
-            ];
+                const catalog = await response.json();
+                return Array.isArray(catalog) ? catalog : [];
+            };
 
             const toSceneUrl = (scene) => {
                 const params = new URLSearchParams();
@@ -270,7 +266,14 @@
                 window.location.assign(toSceneUrl(scene));
             };
 
-            const mountSceneBrowser = () => {
+            const mountSceneBrowser = async () => {
+                let sceneCatalog = [];
+                try {
+                    sceneCatalog = await loadSceneCatalog();
+                } catch (error) {
+                    console.error(error);
+                }
+
                 document.body.classList.add('scene-browser-mode');
                 document.body.innerHTML = `
                     <main class="scene-browser" aria-label="PanoScene4D scene browser">
@@ -355,7 +358,7 @@
             if (hasViewerParams(params)) {
                 await import('./index.js?v=20260802-sequence-first-frame');
             } else {
-                mountSceneBrowser();
+                await mountSceneBrowser();
             }
         </script>
     </body>
