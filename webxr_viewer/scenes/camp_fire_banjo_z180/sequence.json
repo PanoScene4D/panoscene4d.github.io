@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "name": "Camp Fire Banjo",
+  "fps": 10.0,
+  "autoplay": true,
+  "frames": [
+    {
+      "index": 0,
+      "filename": "frame_000270.sog",
+      "url": "assets/frame_000270.sog"
+    },
+    {
+      "index": 1,
+      "filename": "frame_000271.sog",
+      "url": "assets/frame_000271.sog"
+    },
+    {
+      "index": 2,
+      "filename": "frame_000272.sog",
+      "url": "assets/frame_000272.sog"
+    },
+    {
+      "index": 3,
+      "filename": "frame_000273.sog",
+      "url": "assets/frame_000273.sog"
+    },
+    {
+      "index": 4,
+      "filename": "frame_000274.sog",
+      "url": "assets/frame_000274.sog"
+    },
+    {
+      "index": 5,
+      "filename": "frame_000275.sog",
+      "url": "assets/frame_000275.sog"
+    },
+    {
+      "index": 6,
+      "filename": "frame_000276.sog",
+      "url": "assets/frame_000276.sog"
+    },
+    {
+      "index": 7,
+      "filename": "frame_000277.sog",
+      "url": "assets/frame_000277.sog"
+    },
+    {
+      "index": 8,
+      "filename": "frame_000278.sog",
+      "url": "assets/frame_000278.sog"
+    },
+    {
+      "index": 9,
+      "filename": "frame_000279.sog",
+      "url": "assets/frame_000279.sog"
+    },
+    {
+      "index": 10,
+      "filename": "frame_000280.sog",
+      "url": "assets/frame_000280.sog"
+    },
+    {
+      "index": 11,
+      "filename": "frame_000281.sog",
+      "url": "assets/frame_000281.sog"
+    },
+    {
+      "index": 12,
+      "filename": "frame_000282.sog",
+      "url": "assets/frame_000282.sog"
+    },
+    {
+      "index": 13,
+      "filename": "frame_000283.sog",
+      "url": "assets/frame_000283.sog"
+    },
+    {
+      "index": 14,
+      "filename": "frame_000284.sog",
+      "url": "assets/frame_000284.sog"
+    },
+    {
+      "index": 15,
+      "filename": "frame_000285.sog",
+      "url": "assets/frame_000285.sog"
+    },
+    {
+      "index": 16,
+      "filename": "frame_000286.sog",
+      "url": "assets/frame_000286.sog"
+    },
+    {
+      "index": 17,
+      "filename": "frame_000287.sog",
+      "url": "assets/frame_000287.sog"
+    },
+    {
+      "index": 18,
+      "filename": "frame_000288.sog",
+      "url": "assets/frame_000288.sog"
+    },
+    {
+      "index": 19,
+      "filename": "frame_000289.sog",
+      "url": "assets/frame_000289.sog"
+    },
+    {
+      "index": 20,
+      "filename": "frame_000290.sog",
+      "url": "assets/frame_000290.sog"
+    },
+    {
+      "index": 21,
+      "filename": "frame_000291.sog",
+      "url": "assets/frame_000291.sog"
+    },
+    {
+      "index": 22,
+      "filename": "frame_000292.sog",
+      "url": "assets/frame_000292.sog"
+    },
+    {
+      "index": 23,
+      "filename": "frame_000293.sog",
+      "url": "assets/frame_000293.sog"
+    },
+    {
+      "index": 24,
+      "filename": "frame_000294.sog",
+      "url": "assets/frame_000294.sog"
+    },
+    {
+      "index": 25,
+      "filename": "frame_000295.sog",
+      "url": "assets/frame_000295.sog"
+    },
+    {
+      "index": 26,
+      "filename": "frame_000296.sog",
+      "url": "assets/frame_000296.sog"
+    },
+    {
+      "index": 27,
+      "filename": "frame_000297.sog",
+      "url": "assets/frame_000297.sog"
+    },
+    {
+      "index": 28,
+      "filename": "frame_000298.sog",
+      "url": "assets/frame_000298.sog"
+    },
+    {
+      "index": 29,
+      "filename": "frame_000299.sog",
+      "url": "assets/frame_000299.sog"
+    },
+    {
+      "index": 30,
+      "filename": "frame_000300.sog",
+      "url": "assets/frame_000300.sog"
+    },
+    {
+      "index": 31,
+      "filename": "frame_000301.sog",
+      "url": "assets/frame_000301.sog"
+    },
+    {
+      "index": 32,
+      "filename": "frame_000302.sog",
+      "url": "assets/frame_000302.sog"
+    },
+    {
+      "index": 33,
+      "filename": "frame_000303.sog",
+      "url": "assets/frame_000303.sog"
+    },
+    {
+      "index": 34,
+      "filename": "frame_000304.sog",
+      "url": "assets/frame_000304.sog"
+    },
+    {
+      "index": 35,
+      "filename": "frame_000305.sog",
+      "url": "assets/frame_000305.sog"
+    },
+    {
+      "index": 36,
+      "filename": "frame_000306.sog",
+      "url": "assets/frame_000306.sog"
+    },
+    {
+      "index": 37,
+      "filename": "frame_000307.sog",
+      "url": "assets/frame_000307.sog"
+    },
+    {
+      "index": 38,
+      "filename": "frame_000308.sog",
+      "url": "assets/frame_000308.sog"
+    },
+    {
+      "index": 39,
+      "filename": "frame_000309.sog",
+      "url": "assets/frame_000309.sog"
+    },
+    {
+      "index": 40,
+      "filename": "frame_000310.sog",
+      "url": "assets/frame_000310.sog"
+    },
+    {
+      "index": 41,
+      "filename": "frame_000311.sog",
+      "url": "assets/frame_000311.sog"
+    },
+    {
+      "index": 42,
+      "filename": "frame_000312.sog",
+      "url": "assets/frame_000312.sog"
+    },
+    {
+      "index": 43,
+      "filename": "frame_000313.sog",
+      "url": "assets/frame_000313.sog"
+    },
+    {
+      "index": 44,
+      "filename": "frame_000314.sog",
+      "url": "assets/frame_000314.sog"
+    },
+    {
+      "index": 45,
+      "filename": "frame_000315.sog",
+      "url": "assets/frame_000315.sog"
+    },
+    {
+      "index": 46,
+      "filename": "frame_000316.sog",
+      "url": "assets/frame_000316.sog"
+    },
+    {
+      "index": 47,
+      "filename": "frame_000317.sog",
+      "url": "assets/frame_000317.sog"
+    },
+    {
+      "index": 48,
+      "filename": "frame_000318.sog",
+      "url": "assets/frame_000318.sog"
+    },
+    {
+      "index": 49,
+      "filename": "frame_000319.sog",
+      "url": "assets/frame_000319.sog"
+    },
+    {
+      "index": 50,
+      "filename": "frame_000320.sog",
+      "url": "assets/frame_000320.sog"
+    },
+    {
+      "index": 51,
+      "filename": "frame_000321.sog",
+      "url": "assets/frame_000321.sog"
+    },
+    {
+      "index": 52,
+      "filename": "frame_000322.sog",
+      "url": "assets/frame_000322.sog"
+    },
+    {
+      "index": 53,
+      "filename": "frame_000323.sog",
+      "url": "assets/frame_000323.sog"
+    },
+    {
+      "index": 54,
+      "filename": "frame_000324.sog",
+      "url": "assets/frame_000324.sog"
+    },
+    {
+      "index": 55,
+      "filename": "frame_000325.sog",
+      "url": "assets/frame_000325.sog"
+    },
+    {
+      "index": 56,
+      "filename": "frame_000326.sog",
+      "url": "assets/frame_000326.sog"
+    },
+    {
+      "index": 57,
+      "filename": "frame_000327.sog",
+      "url": "assets/frame_000327.sog"
+    },
+    {
+      "index": 58,
+      "filename": "frame_000328.sog",
+      "url": "assets/frame_000328.sog"
+    },
+    {
+      "index": 59,
+      "filename": "frame_000329.sog",
+      "url": "assets/frame_000329.sog"
+    }
+  ],
+  "background": {
+    "filename": "background.sog",
+    "url": "assets/background.sog",
+    "source": "/home/yunhui/develop/Scene360/runs/cases/case10_matanyone2_sam3_union/static/model/cube6_sharp_da360/result.sog"
+  }
+}

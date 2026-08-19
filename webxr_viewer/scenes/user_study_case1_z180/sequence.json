@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "name": "User Study Case 1",
+  "fps": 12.0,
+  "autoplay": true,
+  "frames": [
+    {
+      "index": 0,
+      "filename": "frame_000000.sog",
+      "url": "assets/frame_000000.sog"
+    },
+    {
+      "index": 1,
+      "filename": "frame_000001.sog",
+      "url": "assets/frame_000001.sog"
+    },
+    {
+      "index": 2,
+      "filename": "frame_000002.sog",
+      "url": "assets/frame_000002.sog"
+    },
+    {
+      "index": 3,
+      "filename": "frame_000003.sog",
+      "url": "assets/frame_000003.sog"
+    },
+    {
+      "index": 4,
+      "filename": "frame_000004.sog",
+      "url": "assets/frame_000004.sog"
+    },
+    {
+      "index": 5,
+      "filename": "frame_000005.sog",
+      "url": "assets/frame_000005.sog"
+    },
+    {
+      "index": 6,
+      "filename": "frame_000006.sog",
+      "url": "assets/frame_000006.sog"
+    },
+    {
+      "index": 7,
+      "filename": "frame_000007.sog",
+      "url": "assets/frame_000007.sog"
+    },
+    {
+      "index": 8,
+      "filename": "frame_000008.sog",
+      "url": "assets/frame_000008.sog"
+    },
+    {
+      "index": 9,
+      "filename": "frame_000009.sog",
+      "url": "assets/frame_000009.sog"
+    },
+    {
+      "index": 10,
+      "filename": "frame_000010.sog",
+      "url": "assets/frame_000010.sog"
+    },
+    {
+      "index": 11,
+      "filename": "frame_000011.sog",
+      "url": "assets/frame_000011.sog"
+    },
+    {
+      "index": 12,
+      "filename": "frame_000012.sog",
+      "url": "assets/frame_000012.sog"
+    },
+    {
+      "index": 13,
+      "filename": "frame_000013.sog",
+      "url": "assets/frame_000013.sog"
+    },
+    {
+      "index": 14,
+      "filename": "frame_000014.sog",
+      "url": "assets/frame_000014.sog"
+    },
+    {
+      "index": 15,
+      "filename": "frame_000015.sog",
+      "url": "assets/frame_000015.sog"
+    },
+    {
+      "index": 16,
+      "filename": "frame_000016.sog",
+      "url": "assets/frame_000016.sog"
+    },
+    {
+      "index": 17,
+      "filename": "frame_000017.sog",
+      "url": "assets/frame_000017.sog"
+    },
+    {
+      "index": 18,
+      "filename": "frame_000018.sog",
+      "url": "assets/frame_000018.sog"
+    },
+    {
+      "index": 19,
+      "filename": "frame_000019.sog",
+      "url": "assets/frame_000019.sog"
+    },
+    {
+      "index": 20,
+      "filename": "frame_000020.sog",
+      "url": "assets/frame_000020.sog"
+    },
+    {
+      "index": 21,
+      "filename": "frame_000021.sog",
+      "url": "assets/frame_000021.sog"
+    },
+    {
+      "index": 22,
+      "filename": "frame_000022.sog",
+      "url": "assets/frame_000022.sog"
+    },
+    {
+      "index": 23,
+      "filename": "frame_000023.sog",
+      "url": "assets/frame_000023.sog"
+    },
+    {
+      "index": 24,
+      "filename": "frame_000024.sog",
+      "url": "assets/frame_000024.sog"
+    },
+    {
+      "index": 25,
+      "filename": "frame_000025.sog",
+      "url": "assets/frame_000025.sog"
+    },
+    {
+      "index": 26,
+      "filename": "frame_000026.sog",
+      "url": "assets/frame_000026.sog"
+    },
+    {
+      "index": 27,
+      "filename": "frame_000027.sog",
+      "url": "assets/frame_000027.sog"
+    },
+    {
+      "index": 28,
+      "filename": "frame_000028.sog",
+      "url": "assets/frame_000028.sog"
+    },
+    {
+      "index": 29,
+      "filename": "frame_000029.sog",
+      "url": "assets/frame_000029.sog"
+    },
+    {
+      "index": 30,
+      "filename": "frame_000030.sog",
+      "url": "assets/frame_000030.sog"
+    },
+    {
+      "index": 31,
+      "filename": "frame_000031.sog",
+      "url": "assets/frame_000031.sog"
+    },
+    {
+      "index": 32,
+      "filename": "frame_000032.sog",
+      "url": "assets/frame_000032.sog"
+    },
+    {
+      "index": 33,
+      "filename": "frame_000033.sog",
+      "url": "assets/frame_000033.sog"
+    },
+    {
+      "index": 34,
+      "filename": "frame_000034.sog",
+      "url": "assets/frame_000034.sog"
+    },
+    {
+      "index": 35,
+      "filename": "frame_000035.sog",
+      "url": "assets/frame_000035.sog"
+    },
+    {
+      "index": 36,
+      "filename": "frame_000036.sog",
+      "url": "assets/frame_000036.sog"
+    },
+    {
+      "index": 37,
+      "filename": "frame_000037.sog",
+      "url": "assets/frame_000037.sog"
+    },
+    {
+      "index": 38,
+      "filename": "frame_000038.sog",
+      "url": "assets/frame_000038.sog"
+    },
+    {
+      "index": 39,
+      "filename": "frame_000039.sog",
+      "url": "assets/frame_000039.sog"
+    },
+    {
+      "index": 40,
+      "filename": "frame_000040.sog",
+      "url": "assets/frame_000040.sog"
+    },
+    {
+      "index": 41,
+      "filename": "frame_000041.sog",
+      "url": "assets/frame_000041.sog"
+    },
+    {
+      "index": 42,
+      "filename": "frame_000042.sog",
+      "url": "assets/frame_000042.sog"
+    },
+    {
+      "index": 43,
+      "filename": "frame_000043.sog",
+      "url": "assets/frame_000043.sog"
+    },
+    {
+      "index": 44,
+      "filename": "frame_000044.sog",
+      "url": "assets/frame_000044.sog"
+    },
+    {
+      "index": 45,
+      "filename": "frame_000045.sog",
+      "url": "assets/frame_000045.sog"
+    },
+    {
+      "index": 46,
+      "filename": "frame_000046.sog",
+      "url": "assets/frame_000046.sog"
+    },
+    {
+      "index": 47,
+      "filename": "frame_000047.sog",
+      "url": "assets/frame_000047.sog"
+    },
+    {
+      "index": 48,
+      "filename": "frame_000048.sog",
+      "url": "assets/frame_000048.sog"
+    },
+    {
+      "index": 49,
+      "filename": "frame_000049.sog",
+      "url": "assets/frame_000049.sog"
+    },
+    {
+      "index": 50,
+      "filename": "frame_000050.sog",
+      "url": "assets/frame_000050.sog"
+    },
+    {
+      "index": 51,
+      "filename": "frame_000051.sog",
+      "url": "assets/frame_000051.sog"
+    },
+    {
+      "index": 52,
+      "filename": "frame_000052.sog",
+      "url": "assets/frame_000052.sog"
+    },
+    {
+      "index": 53,
+      "filename": "frame_000053.sog",
+      "url": "assets/frame_000053.sog"
+    },
+    {
+      "index": 54,
+      "filename": "frame_000054.sog",
+      "url": "assets/frame_000054.sog"
+    },
+    {
+      "index": 55,
+      "filename": "frame_000055.sog",
+      "url": "assets/frame_000055.sog"
+    },
+    {
+      "index": 56,
+      "filename": "frame_000056.sog",
+      "url": "assets/frame_000056.sog"
+    },
+    {
+      "index": 57,
+      "filename": "frame_000057.sog",
+      "url": "assets/frame_000057.sog"
+    },
+    {
+      "index": 58,
+      "filename": "frame_000058.sog",
+      "url": "assets/frame_000058.sog"
+    },
+    {
+      "index": 59,
+      "filename": "frame_000059.sog",
+      "url": "assets/frame_000059.sog"
+    },
+    {
+      "index": 60,
+      "filename": "frame_000060.sog",
+      "url": "assets/frame_000060.sog"
+    },
+    {
+      "index": 61,
+      "filename": "frame_000061.sog",
+      "url": "assets/frame_000061.sog"
+    },
+    {
+      "index": 62,
+      "filename": "frame_000062.sog",
+      "url": "assets/frame_000062.sog"
+    },
+    {
+      "index": 63,
+      "filename": "frame_000063.sog",
+      "url": "assets/frame_000063.sog"
+    },
+    {
+      "index": 64,
+      "filename": "frame_000064.sog",
+      "url": "assets/frame_000064.sog"
+    },
+    {
+      "index": 65,
+      "filename": "frame_000065.sog",
+      "url": "assets/frame_000065.sog"
+    },
+    {
+      "index": 66,
+      "filename": "frame_000066.sog",
+      "url": "assets/frame_000066.sog"
+    },
+    {
+      "index": 67,
+      "filename": "frame_000067.sog",
+      "url": "assets/frame_000067.sog"
+    },
+    {
+      "index": 68,
+      "filename": "frame_000068.sog",
+      "url": "assets/frame_000068.sog"
+    },
+    {
+      "index": 69,
+      "filename": "frame_000069.sog",
+      "url": "assets/frame_000069.sog"
+    },
+    {
+      "index": 70,
+      "filename": "frame_000070.sog",
+      "url": "assets/frame_000070.sog"
+    },
+    {
+      "index": 71,
+      "filename": "frame_000071.sog",
+      "url": "assets/frame_000071.sog"
+    },
+    {
+      "index": 72,
+      "filename": "frame_000072.sog",
+      "url": "assets/frame_000072.sog"
+    },
+    {
+      "index": 73,
+      "filename": "frame_000073.sog",
+      "url": "assets/frame_000073.sog"
+    },
+    {
+      "index": 74,
+      "filename": "frame_000074.sog",
+      "url": "assets/frame_000074.sog"
+    },
+    {
+      "index": 75,
+      "filename": "frame_000075.sog",
+      "url": "assets/frame_000075.sog"
+    },
+    {
+      "index": 76,
+      "filename": "frame_000076.sog",
+      "url": "assets/frame_000076.sog"
+    },
+    {
+      "index": 77,
+      "filename": "frame_000077.sog",
+      "url": "assets/frame_000077.sog"
+    },
+    {
+      "index": 78,
+      "filename": "frame_000078.sog",
+      "url": "assets/frame_000078.sog"
+    },
+    {
+      "index": 79,
+      "filename": "frame_000079.sog",
+      "url": "assets/frame_000079.sog"
+    },
+    {
+      "index": 80,
+      "filename": "frame_000080.sog",
+      "url": "assets/frame_000080.sog"
+    },
+    {
+      "index": 81,
+      "filename": "frame_000081.sog",
+      "url": "assets/frame_000081.sog"
+    },
+    {
+      "index": 82,
+      "filename": "frame_000082.sog",
+      "url": "assets/frame_000082.sog"
+    },
+    {
+      "index": 83,
+      "filename": "frame_000083.sog",
+      "url": "assets/frame_000083.sog"
+    },
+    {
+      "index": 84,
+      "filename": "frame_000084.sog",
+      "url": "assets/frame_000084.sog"
+    },
+    {
+      "index": 85,
+      "filename": "frame_000085.sog",
+      "url": "assets/frame_000085.sog"
+    },
+    {
+      "index": 86,
+      "filename": "frame_000086.sog",
+      "url": "assets/frame_000086.sog"
+    },
+    {
+      "index": 87,
+      "filename": "frame_000087.sog",
+      "url": "assets/frame_000087.sog"
+    },
+    {
+      "index": 88,
+      "filename": "frame_000088.sog",
+      "url": "assets/frame_000088.sog"
+    },
+    {
+      "index": 89,
+      "filename": "frame_000089.sog",
+      "url": "assets/frame_000089.sog"
+    },
+    {
+      "index": 90,
+      "filename": "frame_000090.sog",
+      "url": "assets/frame_000090.sog"
+    },
+    {
+      "index": 91,
+      "filename": "frame_000091.sog",
+      "url": "assets/frame_000091.sog"
+    },
+    {
+      "index": 92,
+      "filename": "frame_000092.sog",
+      "url": "assets/frame_000092.sog"
+    },
+    {
+      "index": 93,
+      "filename": "frame_000093.sog",
+      "url": "assets/frame_000093.sog"
+    },
+    {
+      "index": 94,
+      "filename": "frame_000094.sog",
+      "url": "assets/frame_000094.sog"
+    },
+    {
+      "index": 95,
+      "filename": "frame_000095.sog",
+      "url": "assets/frame_000095.sog"
+    },
+    {
+      "index": 96,
+      "filename": "frame_000096.sog",
+      "url": "assets/frame_000096.sog"
+    },
+    {
+      "index": 97,
+      "filename": "frame_000097.sog",
+      "url": "assets/frame_000097.sog"
+    },
+    {
+      "index": 98,
+      "filename": "frame_000098.sog",
+      "url": "assets/frame_000098.sog"
+    },
+    {
+      "index": 99,
+      "filename": "frame_000099.sog",
+      "url": "assets/frame_000099.sog"
+    }
+  ],
+  "background": {
+    "filename": "background.sog",
+    "url": "assets/background.sog",
+    "source": "/home/yunhui/develop/Scene360/runs/cases/case3_reseed10/compose/yup/background.sog"
+  }
+}

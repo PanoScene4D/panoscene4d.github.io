@@ -1,9 +1,9 @@
 [
   {
     "title": "Camp Fire Banjo",
-    "id": "camp_fire_banjo",
-    "thumbnail": "/scenes/camp_fire_banjo/assets/thumbnail.jpg",
-    "sequence": "/scenes/camp_fire_banjo/sequence.json",
+    "id": "camp_fire_banjo_z180",
+    "thumbnail": "/scenes/camp_fire_banjo_z180/assets/thumbnail.jpg",
+    "sequence": "/scenes/camp_fire_banjo_z180/sequence.json",
     "frames": 60,
     "fps": 10,
     "tags": [
@@ -12,14 +12,14 @@
       "MatAnyone2 + SAM3",
       "Middle 60 consecutive frames"
     ],
-    "deferLoad": "/scenes/camp_fire_banjo/assets/background.sog",
+    "deferLoad": "/scenes/camp_fire_banjo_z180/assets/background.sog",
     "deferFilename": "background.sog"
   },
   {
     "title": "User Study Case 1",
-    "id": "user_study_case1",
-    "thumbnail": "/scenes/user_study_case1/assets/thumbnail.jpg",
-    "sequence": "/scenes/user_study_case1/sequence.json",
+    "id": "user_study_case1_z180",
+    "thumbnail": "/scenes/user_study_case1_z180/assets/thumbnail.jpg",
+    "sequence": "/scenes/user_study_case1_z180/sequence.json",
     "frames": 100,
     "fps": 12,
     "tags": [
@@ -27,7 +27,7 @@
       "DA360 refscale",
       "No static ICP"
     ],
-    "deferLoad": "/scenes/user_study_case1/assets/background.sog",
+    "deferLoad": "/scenes/user_study_case1_z180/assets/background.sog",
     "deferFilename": "background.sog"
   },
   {
