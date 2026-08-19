@@ -1,0 +1,1 @@
+https://panoscene4d.github.io/?sequence=/scenes/user_study_case1/sequence.json&deferLoad=/scenes/user_study_case1/assets/background.sog&deferFilename=background.sog

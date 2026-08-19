@@ -13,5 +13,19 @@
     ],
     "deferLoad": "/scenes/camp_fire_banjo/assets/background.sog",
     "deferFilename": "background.sog"
+  },
+  {
+    "title": "User Study Case 1",
+    "id": "user_study_case1",
+    "sequence": "/scenes/user_study_case1/sequence.json",
+    "frames": 100,
+    "fps": 12,
+    "tags": [
+      "SOG",
+      "DA360 refscale",
+      "No static ICP"
+    ],
+    "deferLoad": "/scenes/user_study_case1/assets/background.sog",
+    "deferFilename": "background.sog"
   }
 ]
