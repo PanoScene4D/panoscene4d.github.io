@@ -2,6 +2,7 @@
   {
     "title": "Camp Fire Banjo",
     "id": "camp_fire_banjo",
+    "thumbnail": "/scenes/camp_fire_banjo/assets/thumbnail.jpg",
     "sequence": "/scenes/camp_fire_banjo/sequence.json",
     "frames": 60,
     "fps": 10,
@@ -17,6 +18,7 @@
   {
     "title": "User Study Case 1",
     "id": "user_study_case1",
+    "thumbnail": "/scenes/user_study_case1/assets/thumbnail.jpg",
     "sequence": "/scenes/user_study_case1/sequence.json",
     "frames": 100,
     "fps": 12,
