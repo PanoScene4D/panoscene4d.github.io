@@ -12,7 +12,8 @@ const getOrientation = (filename: string) => {
         case 'lcc':
             return new Vec3(90, 0, 180);
         default:
-            return new Vec3(0, 0, 0);
+            // Match SuperSplat's native PLY/SOG coordinate convention.
+            return new Vec3(0, 0, 180);
     }
 };
 
