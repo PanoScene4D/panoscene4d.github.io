@@ -113,6 +113,7 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
     }
 
     events.fire('timeline.setFrame', 0);
+    events.fire('camera.focus');
 
     if (manifest.autoplay !== false && importFiles.length > 1) {
         events.fire('timeline.setPlaying', true);

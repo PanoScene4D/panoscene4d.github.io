@@ -11,7 +11,7 @@ const registerPlySequenceEvents = (events: Events) => {
 
     const setFrames = (files: File[]) => {
         // eslint-disable-next-line regexp/no-super-linear-backtracking
-        const regex = /(.*?)(\d+)(?:\.compressed)?\.ply$/;
+        const regex = /(.*?)(\d+)(?:\.compressed)?\.(?:ply|sog)$/;
 
         // sort frames by trailing number, if it exists
         const sorter = (a: File, b: File) => {

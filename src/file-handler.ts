@@ -109,14 +109,14 @@ const allImportTypes = {
 };
 
 // determine if all files share a common filename prefix followed by
-// a frame number, e.g. "frame0001.ply", "frame0002.ply", etc.
+// a frame number, e.g. "frame0001.ply", "frame0002.sog", etc.
 const isPlySequence = (filenames: string[]) => {
     if (filenames.length < 2) {
         return false;
     }
 
     // eslint-disable-next-line regexp/no-super-linear-backtracking
-    const regex = /(.*?)(\d+)(?:\.compressed)?\.ply$/;
+    const regex = /(.*?)(\d+)(?:\.compressed)?\.(?:ply|sog)$/;
     const baseMatch = filenames[0].match(regex);
     if (!baseMatch) {
         return false;
@@ -328,7 +328,14 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
             // handle ply sequence
             const sequenceFiles = await Promise.all(files.map(ensureFileContents));
             events.fire('plysequence.setFrames', sequenceFiles);
-            events.fire('timeline.frame', 0);
+            // Load the first frame before returning. Firing timeline.frame here used to
+            // start an untracked async import, so manifest playback could begin before
+            // the first splat had actually been added to the scene.
+            const firstSplat = await events.invoke('plysequence.setFrameAsync', 0) as Splat | null;
+            if (firstSplat) {
+                result.push(firstSplat);
+            }
+            events.fire('timeline.setFrame', 0);
         } else if (isSog(filenames) || isLcc(filenames)) {
             if (isLcc(filenames)) {
                 const response = await events.invoke('showPopup', {
