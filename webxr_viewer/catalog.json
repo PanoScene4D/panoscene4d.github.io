@@ -31,6 +31,19 @@
     "deferFilename": "background.sog"
   },
   {
+    "title": "User Study Case 2",
+    "id": "user_study_case2",
+    "thumbnail": "/scenes/user_study_case2/assets/thumbnail.jpg",
+    "sequence": "/scenes/user_study_case2/sequence.json",
+    "frames": 100,
+    "fps": 10,
+    "tags": [
+      "PLY",
+      "SHARP legacy",
+      "MatAnyone2"
+    ]
+  },
+  {
     "title": "User Study Case 3",
     "id": "user_study_case3",
     "thumbnail": "/scenes/user_study_case3/assets/thumbnail.jpg",
