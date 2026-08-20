@@ -77,8 +77,10 @@ def build_entry(scene_dir: Path, seq_path: Path) -> dict:
         "tags": ["PLY"],
     }
 
+    # A manifest-managed background is loaded by the sequence reader itself.
+    # Keep deferLoad only as a legacy fallback for scenes without that field.
     bg = scene_dir / "assets" / "background.ply"
-    if bg.exists():
+    if not seq.get("background") and bg.exists():
         entry["deferLoad"] = f"/{bg.relative_to(VIEWER_ROOT).as_posix()}"
         entry["deferFilename"] = "background.ply"
         entry["tags"].append("Deferred background")

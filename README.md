@@ -53,6 +53,35 @@ PLY sequence:
 http://127.0.0.1:3000/?sequence=https://example.com/sequence.json
 ```
 
+A sequence manifest can contain its background and initial camera, so the URL
+only needs the `sequence` parameter:
+
+```json
+{
+  "version": 1,
+  "fps": 10,
+  "autoplay": true,
+  "orientation": [0, 0, 0],
+  "camera": {
+    "position": [-0.90752, 0.350303, 0.90752],
+    "target": [0, 0.124, 0],
+    "fov": 75
+  },
+  "frames": [
+    {"index": 0, "filename": "frame_000000.sog", "url": "assets/frame_000000.sog"}
+  ],
+  "background": {
+    "filename": "background.sog",
+    "url": "assets/background.sog"
+  }
+}
+```
+
+Asset URLs are resolved relative to the manifest. An explicit `deferLoad` URL
+parameter overrides the manifest background for compatibility with older links.
+The optional `orientation` Euler angles override SuperSplat's format-based model
+orientation for both the dynamic frames and manifest background.
+
 Static plus dynamic:
 
 ```text

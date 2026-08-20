@@ -1,3 +1,5 @@
+import { Vec3 } from 'playcanvas';
+
 import { Events } from './events';
 import { Splat } from './splat';
 
@@ -8,6 +10,7 @@ const registerPlySequenceEvents = (events: Events) => {
     let sequenceLoading = false;
     let nextFrame = -1;
     let loadingPromise: Promise<void> | null = null;
+    let sequenceOrientation: Vec3 | undefined;
 
     const setFrames = (files: File[]) => {
         // eslint-disable-next-line regexp/no-super-linear-backtracking
@@ -55,7 +58,7 @@ const registerPlySequenceEvents = (events: Events) => {
         const newSplat = await events.invoke('import', [{
             filename: file.name,
             contents: file
-        }], true) as Splat[];
+        }], true, sequenceOrientation) as Splat[];
 
         // wait for the new splat to render before destroying the old one
         // (forceRender is already set by updateState during import)
@@ -77,7 +80,8 @@ const registerPlySequenceEvents = (events: Events) => {
         }
     };
 
-    events.on('plysequence.setFrames', (files: File[]) => {
+    events.on('plysequence.setFrames', (files: File[], orientation?: Vec3) => {
+        sequenceOrientation = orientation?.clone();
         setFrames(files);
     });
 
@@ -116,7 +120,7 @@ const registerPlySequenceEvents = (events: Events) => {
             const newSplat = await events.invoke('import', [{
                 filename: file.name,
                 contents: file
-            }], true) as Splat[];
+            }], true, sequenceOrientation) as Splat[];
 
             // destroy the previous frame
             if (sequenceSplat) {

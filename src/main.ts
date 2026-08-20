@@ -52,6 +52,12 @@ type SequenceManifest = {
     name?: string;
     fps?: number;
     autoplay?: boolean;
+    orientation?: [number, number, number];
+    background?: {
+        filename?: string;
+        url: string;
+        source?: string;
+    };
     camera?: {
         position: [number, number, number];
         target: [number, number, number];
@@ -63,6 +69,12 @@ type SequenceManifest = {
         url: string;
     }[];
 };
+
+const validVector = (value: unknown): value is [number, number, number] => (
+    Array.isArray(value) &&
+    value.length === 3 &&
+    value.every(component => typeof component === 'number' && Number.isFinite(component))
+);
 
 const getURLArgs = () => {
     // extract settings from command line in non-prod builds only
@@ -90,13 +102,14 @@ const getURLArgs = () => {
     return config;
 };
 
-const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
+const loadSequenceManifest = async (events: Events, manifestUrl: string, loadBackground = true) => {
     const response = await fetch(manifestUrl);
     if (!response.ok) {
         throw new Error(`Failed to load sequence manifest: ${manifestUrl}`);
     }
 
     const manifest = await response.json() as SequenceManifest;
+    const orientation = validVector(manifest.orientation) ? new Vec3(...manifest.orientation) : undefined;
     const frames = Array.isArray(manifest.frames) ? manifest.frames : [];
     if (frames.length === 0) {
         throw new Error(`Sequence manifest has no frames: ${manifestUrl}`);
@@ -111,7 +124,7 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
         };
     });
 
-    await events.invoke('import', importFiles);
+    await events.invoke('import', importFiles, false, orientation);
 
     if (typeof manifest.fps === 'number' && Number.isFinite(manifest.fps) && manifest.fps > 0) {
         events.fire('timeline.setFrameRate', Math.round(manifest.fps));
@@ -119,12 +132,17 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
 
     events.fire('timeline.setFrame', 0);
 
+    const background = manifest.background;
+    if (loadBackground && background && typeof background.url === 'string' && background.url.length > 0) {
+        const resolvedUrl = new URL(background.url, response.url).toString();
+        const fallbackName = new URL(resolvedUrl).pathname.split('/').pop() ?? 'background.ply';
+        await events.invoke('import', [{
+            filename: background.filename ?? fallbackName,
+            url: resolvedUrl
+        }], false, orientation);
+    }
+
     const camera = manifest.camera;
-    const validVector = (value: unknown): value is [number, number, number] => (
-        Array.isArray(value) &&
-        value.length === 3 &&
-        value.every(component => typeof component === 'number' && Number.isFinite(component))
-    );
 
     if (camera && validVector(camera.position) && validVector(camera.target)) {
         const fov = typeof camera.fov === 'number' && Number.isFinite(camera.fov) ? camera.fov : undefined;
@@ -138,9 +156,11 @@ const loadSequenceManifest = async (events: Events, manifestUrl: string) => {
     if (manifest.autoplay !== false && importFiles.length > 1) {
         events.fire('timeline.setPlaying', true);
     }
+
+    return orientation;
 };
 
-const importUrlParams = async (events: Events, url: URL, loadParam: string, filenameParam: string) => {
+const importUrlParams = async (events: Events, url: URL, loadParam: string, filenameParam: string, orientation?: Vec3) => {
     const loadList = url.searchParams.getAll(loadParam);
     const filenameList = url.searchParams.getAll(filenameParam);
 
@@ -153,7 +173,7 @@ const importUrlParams = async (events: Events, url: URL, loadParam: string, file
         await events.invoke('import', [{
             filename,
             url: decoded
-        }]);
+        }], false, orientation);
     }
 };
 
@@ -407,11 +427,13 @@ const main = async () => {
     await importUrlParams(events, url, 'load', 'filename');
 
     const sequenceManifest = url.searchParams.get('sequence');
+    let sequenceOrientation: Vec3 | undefined;
     if (sequenceManifest) {
-        await loadSequenceManifest(events, decodeURIComponent(sequenceManifest));
+        // An explicit deferLoad remains available as a background override for old links.
+        sequenceOrientation = await loadSequenceManifest(events, decodeURIComponent(sequenceManifest), !url.searchParams.has('deferLoad'));
     }
 
-    await importUrlParams(events, url, 'deferLoad', 'deferFilename');
+    await importUrlParams(events, url, 'deferLoad', 'deferFilename', sequenceOrientation);
 
     // handle OS-based file association in PWA mode
     if ('launchQueue' in window) {

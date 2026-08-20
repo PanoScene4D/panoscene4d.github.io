@@ -281,7 +281,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
     };
 
     // import splat model(s) - handles single files, SOG, and LCC formats
-    const importSplatModel = async (files: ImportFile[], animationFrame: boolean) => {
+    const importSplatModel = async (files: ImportFile[], animationFrame: boolean, orientation?: Vec3) => {
         try {
             const filenames = files.map(f => f.filename.toLowerCase());
 
@@ -309,7 +309,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
                 mainFile.url :
                 mainFile.filename;
 
-            const model = await scene.assetLoader.load(filename, fileSystem, animationFrame);
+            const model = await scene.assetLoader.load(filename, fileSystem, animationFrame, undefined, orientation);
             await scene.add(model);
             return model;
         } catch (error) {
@@ -319,7 +319,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
     };
 
     // figure out what the set of files are (ply sequence, document, sog set, ply) and then import them
-    const importFiles = async (files: ImportFile[], animationFrame = false) => {
+    const importFiles = async (files: ImportFile[], animationFrame = false, orientation?: Vec3) => {
         const filenames = files.map(f => f.filename.toLowerCase());
 
         const result: Splat[] = [];
@@ -327,7 +327,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
         if (isPlySequence(filenames)) {
             // handle ply sequence
             const sequenceFiles = await Promise.all(files.map(ensureFileContents));
-            events.fire('plysequence.setFrames', sequenceFiles);
+            events.fire('plysequence.setFrames', sequenceFiles, orientation);
             // Load the first frame before returning. Firing timeline.frame here used to
             // start an untracked async import, so manifest playback could begin before
             // the first splat had actually been added to the scene.
@@ -348,7 +348,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
                     return result;
                 }
             }
-            const model = await importSplatModel(files, animationFrame);
+            const model = await importSplatModel(files, animationFrame, orientation);
             if (model) result.push(model);
         } else {
             // check for unrecognized file types
@@ -369,7 +369,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
                     await events.invoke('doc.load', files[i].contents ?? (await fetch(files[i].url)).arrayBuffer(), files[i].handle);
                 } else if (['.ply', '.splat', '.sog', '.ksplat', '.spz'].some(ext => filename.endsWith(ext))) {
                     // load gaussian splat model
-                    const model = await importSplatModel([files[i]], animationFrame);
+                    const model = await importSplatModel([files[i]], animationFrame, orientation);
                     if (model) result.push(model);
                 } else if (filename.endsWith('images.txt')) {
                     // load colmap frames
@@ -384,8 +384,8 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
         return result;
     };
 
-    events.function('import', (files: ImportFile[], animationFrame = false) => {
-        return importFiles(files, animationFrame);
+    events.function('import', (files: ImportFile[], animationFrame = false, orientation?: Vec3) => {
+        return importFiles(files, animationFrame, orientation);
     });
 
     // create a file selector element as fallback when showOpenFilePicker isn't available

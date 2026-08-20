@@ -27,7 +27,7 @@ class AssetLoader {
         this.events = events;
     }
 
-    async load(filename: string, fileSystem: ReadFileSystem, animationFrame?: boolean, skipReorder?: boolean) {
+    async load(filename: string, fileSystem: ReadFileSystem, animationFrame?: boolean, skipReorder?: boolean, orientation?: Vec3) {
         if (!animationFrame) {
             this.events.fire('startSpinner');
         }
@@ -41,7 +41,7 @@ class AssetLoader {
             this.app.assets.add(asset);
             asset.resource = new GSplatResource(this.app.graphicsDevice, gsplatData);
 
-            return new Splat(asset, getOrientation(filename));
+            return new Splat(asset, orientation ?? getOrientation(filename));
         } finally {
             if (!animationFrame) {
                 this.events.fire('stopSpinner');
