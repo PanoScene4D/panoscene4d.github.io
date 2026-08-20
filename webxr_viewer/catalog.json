@@ -45,5 +45,14 @@
       "SHARP legacy",
       "MatAnyone2"
     ]
+  },
+  {
+    "title": "User Study Case 3",
+    "id": "user_study_case3",
+    "thumbnail": "/scenes/user_study_case3/assets/thumbnail.jpg",
+    "video": "/scenes/user_study_case3/assets/raw_frames_2k.mp4",
+    "sequence": "/scenes/user_study_case3/sequence.json",
+    "frames": 100,
+    "fps": 12
   }
 ]
