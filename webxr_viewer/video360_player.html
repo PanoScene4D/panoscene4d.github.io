@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>360 Video Player</title>
+  <link rel="icon" href="data:,">
+  <style>
+    body { margin: 0; overflow: hidden; background: #000; color: #fff; font-family: sans-serif; }
+    #video {
+      position: fixed;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #hint {
+      position: fixed;
+      left: 12px;
+      top: 10px;
+      z-index: 2;
+      max-width: min(560px, calc(100vw - 24px));
+      padding: 8px 10px;
+      background: rgba(0,0,0,.62);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    #hint[data-state="ok"] { color: #bbf7d0; }
+    #hint[data-state="warn"] { color: #fde68a; }
+    #hint[data-state="error"] { color: #fecaca; }
+    #player-controls {
+      position: fixed;
+      right: 12px;
+      top: 10px;
+      z-index: 3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .player-button {
+      min-height: 34px;
+      padding: 0 11px;
+      border: 1px solid rgba(255,255,255,.82);
+      border-radius: 6px;
+      background: rgba(0,0,0,.42);
+      color: #fff;
+      cursor: pointer;
+      font: 13px sans-serif;
+      font-weight: 700;
+    }
+    .xr-button {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+      min-width: 128px;
+      padding: 12px 14px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background: rgba(0,0,0,.35);
+      color: #fff;
+      cursor: pointer;
+      font: 13px sans-serif;
+      text-align: center;
+      z-index: 999;
+    }
+    .xr-button:disabled {
+      cursor: auto;
+      opacity: .6;
+      min-width: 180px;
+    }
+  </style>
+  <script src="./static/lib/three.r118.min.js?v=20260820-published-360"></script>
+</head>
+<body>
+  <div id="hint">Loading 360 video...</div>
+  <div id="player-controls">
+    <button class="player-button" id="play-video" type="button">Play</button>
+    <button class="player-button" id="reload-video" type="button">Retry</button>
+  </div>
+  <video id="video" muted autoplay loop playsinline preload="auto"></video>
+  <script>
+    if (navigator.xr && navigator.xr.isSessionSupported && !navigator.xr.supportsSession) {
+      navigator.xr.supportsSession = navigator.xr.isSessionSupported.bind(navigator.xr);
+    }
+
+    const params = new URLSearchParams(
+      window.location.search || window.location.hash.replace(/^#/, '')
+    );
+    const src = params.get('src');
+    const title = params.get('title') || '360 Video';
+    function numberParam(name, fallback) {
+      const rawValue = params.get(name);
+      if (rawValue === null || rawValue === '') return fallback;
+      const value = Number(rawValue);
+      return Number.isFinite(value) ? value : fallback;
+    }
+    const xrHeightOffset = numberParam('xrHeightOffset', -1.6);
+    const video360PitchOffsetDeg = numberParam('video360PitchOffsetDeg', 0);
+    const video360PitchOffsetRad = video360PitchOffsetDeg * Math.PI / 180;
+    const video360XrFramebufferScale = Math.max(0.4, Math.min(1, numberParam('video360XrFramebufferScale', 0.65)));
+    const video360PixelRatio = Math.max(0.75, Math.min(1.5, numberParam('video360PixelRatio', 1)));
+    const video360SphereRadius = Math.max(5, Math.min(500, numberParam('video360SphereRadius', 20)));
+    document.title = title;
+    const hint = document.getElementById('hint');
+    const playButton = document.getElementById('play-video');
+    const reloadButton = document.getElementById('reload-video');
+
+    if (!src) {
+      hint.textContent = 'Missing ?src= video URL.';
+      hint.dataset.state = 'error';
+      throw new Error('Missing ?src= video URL.');
+    }
+
+    const video = document.getElementById('video');
+    const sourceUrl = new URL(src, window.location.origin).href;
+    let reloadCount = 0;
+    let scheduledReload = null;
+    let lastProgressAt = performance.now();
+    let lastCurrentTime = 0;
+
+    function setStatus(text, state) {
+      hint.textContent = text;
+      if (state) hint.dataset.state = state;
+      else hint.removeAttribute('data-state');
+    }
+
+    function mediaErrorText(error) {
+      if (!error) return 'unknown media error';
+      const names = {
+        1: 'loading was aborted',
+        2: 'network error',
+        3: 'decode error',
+        4: 'unsupported source'
+      };
+      return names[error.code] || `media error ${error.code}`;
+    }
+
+    async function attemptPlay(reason) {
+      if (!video.src) {
+        video.src = sourceUrl;
+        video.load();
+      }
+      video.muted = true;
+      try {
+        await video.play();
+        playButton.textContent = 'Playing';
+        return true;
+      } catch (error) {
+        playButton.textContent = 'Play';
+        setStatus('Click Play or tap the scene to start the 360 video.', 'warn');
+        console.warn('Video play was blocked or delayed:', reason, error);
+        return false;
+      }
+    }
+
+    function waitForVideoReady(timeoutMs) {
+      if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA && !video.paused) {
+        return Promise.resolve(true);
+      }
+      return new Promise((resolve) => {
+        const timeout = window.setTimeout(() => cleanup(false), timeoutMs);
+        function cleanup(result) {
+          window.clearTimeout(timeout);
+          video.removeEventListener('loadeddata', onReady);
+          video.removeEventListener('canplay', onReady);
+          video.removeEventListener('playing', onReady);
+          video.removeEventListener('error', onError);
+          resolve(result);
+        }
+        function onReady() {
+          cleanup(true);
+        }
+        function onError() {
+          cleanup(false);
+        }
+        video.addEventListener('loadeddata', onReady);
+        video.addEventListener('canplay', onReady);
+        video.addEventListener('playing', onReady);
+        video.addEventListener('error', onError);
+      });
+    }
+
+    function clearScheduledReload() {
+      if (!scheduledReload) return;
+      window.clearTimeout(scheduledReload);
+      scheduledReload = null;
+    }
+
+    function reloadVideo(reason) {
+      clearScheduledReload();
+      reloadCount += 1;
+      setStatus(`Reloading 360 video (${reloadCount}/3)...`, 'warn');
+      console.warn('Reloading 360 video:', reason, sourceUrl);
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+      window.setTimeout(() => {
+        video.src = sourceUrl;
+        video.load();
+        attemptPlay(`reload:${reason}`);
+      }, 80);
+    }
+
+    function scheduleReload(reason, delayMs) {
+      if (scheduledReload || video.error?.code === 4) return;
+      if (reloadCount >= 3) {
+        setStatus('360 video is still not starting. Use Retry, or reopen this condition.', 'error');
+        return;
+      }
+      scheduledReload = window.setTimeout(() => reloadVideo(reason), delayMs);
+    }
+
+    video.addEventListener('loadstart', () => setStatus('Loading 360 video...', 'warn'));
+    video.addEventListener('loadedmetadata', () => setStatus('360 video metadata loaded.', 'warn'));
+    video.addEventListener('loadeddata', () => {
+      lastProgressAt = performance.now();
+      setStatus('360 video is ready. Drag to look around on desktop.', 'ok');
+    });
+    video.addEventListener('canplay', () => {
+      clearScheduledReload();
+      attemptPlay('canplay');
+    });
+    video.addEventListener('playing', () => {
+      clearScheduledReload();
+      reloadCount = 0;
+      playButton.textContent = 'Playing';
+      setStatus('Playing. Drag to look around on desktop.', 'ok');
+    });
+    video.addEventListener('pause', () => {
+      playButton.textContent = 'Play';
+    });
+    video.addEventListener('timeupdate', () => {
+      lastProgressAt = performance.now();
+      lastCurrentTime = video.currentTime;
+    });
+    video.addEventListener('waiting', () => {
+      setStatus('360 video is buffering...', 'warn');
+      scheduleReload('waiting for data', 4500);
+    });
+    video.addEventListener('stalled', () => {
+      setStatus('360 video stalled. Retrying if it does not recover.', 'warn');
+      scheduleReload('stalled', 2500);
+    });
+    video.addEventListener('error', () => {
+      const error = video.error;
+      const code = mediaErrorText(error);
+      setStatus(`360 video failed: ${code}. Retrying...`, 'error');
+      console.error('Video failed to load:', video.currentSrc || video.src, error);
+      scheduleReload(code, 400);
+    });
+
+    if (!window.THREE) {
+      setStatus('Three.js failed to load. Refresh this condition.', 'error');
+      throw new Error('Three.js failed to load.');
+    }
+
+    video.src = sourceUrl;
+    video.load();
+    attemptPlay('initial');
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 1100);
+    const cameraDolly = new THREE.Object3D();
+    cameraDolly.position.y = xrHeightOffset;
+    cameraDolly.add(camera);
+    scene.add(cameraDolly);
+    const renderer = new THREE.WebGLRenderer({
+      antialias: false,
+      powerPreference: 'high-performance'
+    });
+    const xrManager = renderer.xr;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, video360PixelRatio));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    if (xrManager) {
+      xrManager.enabled = true;
+      if (xrManager.setFramebufferScaleFactor) {
+        xrManager.setFramebufferScaleFactor(video360XrFramebufferScale);
+      }
+      if (xrManager.setReferenceSpaceType) {
+        xrManager.setReferenceSpaceType('local-floor');
+      }
+    }
+    document.body.appendChild(renderer.domElement);
+
+    const geometry = new THREE.SphereBufferGeometry(video360SphereRadius, 64, 32);
+    geometry.scale(-1, 1, 1);
+    const texture = new THREE.VideoTexture(video);
+    texture.minFilter = THREE.LinearFilter;
+    texture.magFilter = THREE.LinearFilter;
+    texture.format = THREE.RGBFormat;
+    const material = new THREE.MeshBasicMaterial({ map: texture });
+    const panorama = new THREE.Mesh(geometry, material);
+    // Positive values move the panorama content upward, lowering the perceived viewpoint.
+    panorama.rotation.x = video360PitchOffsetRad;
+    scene.add(panorama);
+
+    let dragging = false;
+    let previousX = 0;
+    let previousY = 0;
+    let yaw = 0;
+    let pitch = 0;
+
+    function updateCamera() {
+      pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch));
+      camera.rotation.order = 'YXZ';
+      camera.rotation.y = yaw;
+      camera.rotation.x = pitch;
+    }
+
+    renderer.domElement.addEventListener('pointerdown', (event) => {
+      dragging = true;
+      previousX = event.clientX;
+      previousY = event.clientY;
+      renderer.domElement.setPointerCapture(event.pointerId);
+      attemptPlay('pointerdown');
+    });
+
+    renderer.domElement.addEventListener('pointermove', (event) => {
+      if (!dragging) return;
+      yaw -= (event.clientX - previousX) * 0.004;
+      pitch -= (event.clientY - previousY) * 0.004;
+      previousX = event.clientX;
+      previousY = event.clientY;
+      updateCamera();
+    });
+
+    renderer.domElement.addEventListener('pointerup', (event) => {
+      dragging = false;
+      renderer.domElement.releasePointerCapture(event.pointerId);
+    });
+
+    playButton.addEventListener('click', () => attemptPlay('manual button'));
+    reloadButton.addEventListener('click', () => {
+      reloadCount = 0;
+      reloadVideo('manual retry');
+    });
+    document.body.addEventListener('click', (event) => {
+      if (event.target.closest('button')) return;
+      attemptPlay('body click');
+    });
+    document.body.appendChild(createWebXRButton(renderer, video));
+
+    function createWebXRButton(renderer, mediaElement) {
+      const button = document.createElement('button');
+      button.className = 'xr-button';
+      button.disabled = true;
+      button.textContent = 'CHECKING XR';
+
+      function disable(text) {
+        button.disabled = true;
+        button.textContent = text;
+      }
+
+      if (!navigator.xr || !navigator.xr.isSessionSupported) {
+        disable('WEBXR NOT AVAILABLE');
+        return button;
+      }
+
+      if (!renderer.xr || typeof renderer.xr.setSession !== 'function') {
+        disable('WEBXR RENDERER MISSING');
+        console.error('WebXR requires THREE.WebGLRenderer.xr.setSession; this Three.js build does not expose it.');
+        return button;
+      }
+
+      let currentSession = null;
+      let pendingSession = false;
+      let xrSupported = false;
+
+      function mediaReadyForXr() {
+        return !mediaElement || (
+          !mediaElement.error
+          && mediaElement.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA
+          && mediaElement.videoWidth > 0
+          && mediaElement.videoHeight > 0
+        );
+      }
+
+      function updateButtonState() {
+        if (pendingSession) return;
+        if (currentSession) {
+          button.disabled = false;
+          button.textContent = 'EXIT XR';
+          return;
+        }
+        if (!xrSupported) return;
+        if (!mediaReadyForXr()) {
+          button.disabled = true;
+          button.textContent = 'WAITING VIDEO';
+          return;
+        }
+        button.disabled = false;
+        button.textContent = 'ENTER XR';
+      }
+
+      if (mediaElement) {
+        ['loadeddata', 'canplay', 'playing', 'timeupdate', 'error', 'stalled', 'emptied'].forEach((eventName) => {
+          mediaElement.addEventListener(eventName, updateButtonState);
+        });
+      }
+
+      function onSessionEnded() {
+        currentSession = null;
+        pendingSession = false;
+        updateButtonState();
+      }
+
+      async function startSession() {
+        if (!mediaReadyForXr()) {
+          setStatus('Wait for the 360 video to load before entering XR.', 'warn');
+          attemptPlay('xr warmup');
+          updateButtonState();
+          return;
+        }
+
+        pendingSession = true;
+        button.disabled = true;
+        button.textContent = 'STARTING VIDEO';
+        let session = null;
+
+        try {
+          const playPromise = attemptPlay('before xr request');
+          session = await navigator.xr.requestSession('immersive-vr', {
+            optionalFeatures: ['local-floor', 'bounded-floor']
+          });
+          currentSession = session;
+          currentSession.addEventListener('end', onSessionEnded, { once: true });
+          if (mediaElement) {
+            button.textContent = 'SYNCING VIDEO';
+            await playPromise;
+            const ready = await waitForVideoReady(5000);
+            if (!ready || !mediaReadyForXr()) {
+              setStatus('360 video is still preparing. Try ENTER XR again after it starts playing.', 'warn');
+              await session.end().catch(() => {});
+              throw new Error('360 video was not ready for XR.');
+            }
+          }
+          button.textContent = 'ENTERING XR';
+          await renderer.xr.setSession(session);
+          pendingSession = false;
+          updateButtonState();
+        } catch (error) {
+          pendingSession = false;
+          if (session && currentSession === session) {
+            currentSession = null;
+          }
+          updateButtonState();
+          setStatus('XR did not start. Wait for the video to play, then press ENTER XR again.', 'error');
+          console.error('Failed to start immersive WebXR session:', error);
+        }
+      }
+
+      button.addEventListener('click', () => {
+        if (pendingSession) return;
+        if (currentSession) {
+          currentSession.end();
+          return;
+        }
+        startSession();
+      });
+
+      navigator.xr.isSessionSupported('immersive-vr').then((supported) => {
+        if (!supported) {
+          disable('IMMERSIVE VR NOT FOUND');
+          return;
+        }
+        xrSupported = true;
+        updateButtonState();
+      }).catch((error) => {
+        disable('WEBXR CHECK FAILED');
+        console.error('Failed to check immersive WebXR support:', error);
+      });
+
+      return button;
+    }
+
+    renderer.setAnimationLoop(() => {
+      renderer.render(scene, camera);
+    });
+
+    window.setInterval(() => {
+      if (video.error || video.paused) return;
+      const now = performance.now();
+      const hasFrame = video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA;
+      const timeAdvanced = Math.abs(video.currentTime - lastCurrentTime) > 0.001;
+      if (hasFrame && timeAdvanced) {
+        lastProgressAt = now;
+        lastCurrentTime = video.currentTime;
+        return;
+      }
+      if (!hasFrame && now - lastProgressAt > 5000) {
+        setStatus('360 video has not produced a frame yet. Retrying...', 'warn');
+        scheduleReload('no decoded frame', 0);
+        return;
+      }
+      if (hasFrame && now - lastProgressAt > 7000) {
+        attemptPlay('watchdog');
+      }
+    }, 2000);
+
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) attemptPlay('visibilitychange');
+    });
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, video360PixelRatio));
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
