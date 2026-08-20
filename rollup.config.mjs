@@ -56,6 +56,7 @@ const application = {
                         return contents.toString().replace('__BASE_HREF__', HREF);
                     }
                 },
+                { src: 'static/video360_player.html' },
                 { src: 'src/manifest.json' },
                 { src: 'static/images', dest: 'static' },
                 { src: 'static/icons', dest: 'static' },
