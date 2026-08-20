@@ -514,6 +514,6 @@
   "background": {
     "filename": "background.sog",
     "url": "assets/background.sog",
-    "source": "/home/yunhui/develop/Scene360/runs/cases/case5_cube_sam3_person_ball_retry/compose/yup_obj000_orangered65_74_all_objects_z180/background.sog"
+    "source": "/home/yunhui/develop/Scene360/runs/cases/case5_dynamic_stable_matanyone2/compose/yup/background.ply"
   }
 }
