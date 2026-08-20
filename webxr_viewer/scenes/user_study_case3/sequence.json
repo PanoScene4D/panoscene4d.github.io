@@ -3,7 +3,7 @@
   "name": "User Study Case 3",
   "fps": 12.0,
   "autoplay": true,
-  "orientation": [0.0, 0.0, 0.0],
+  "orientation": [0.0, 0.0, 180.0],
   "camera": {
     "position": [0.0, 0.0, 0.0],
     "target": [3.0, 0.5, -8.0],
