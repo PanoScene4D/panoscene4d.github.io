@@ -71,5 +71,22 @@
     ],
     "deferLoad": "/scenes/technical_eval_scene01/assets/background.sog",
     "deferFilename": "background.sog"
+  },
+  {
+    "title": "Infinigen Forest — Technical Evaluation Scene 02",
+    "id": "technical_eval_scene02",
+    "thumbnail": "/scenes/technical_eval_scene02/assets/thumbnail.jpg",
+    "video": "/scenes/technical_eval_scene02/assets/raw_frames_2k.mp4",
+    "sequence": "/scenes/technical_eval_scene02/sequence.json",
+    "frames": 60,
+    "fps": 30,
+    "tags": [
+      "SOG",
+      "Forest",
+      "5 dynamic objects",
+      "Technical evaluation"
+    ],
+    "deferLoad": "/scenes/technical_eval_scene02/assets/background.sog",
+    "deferFilename": "background.sog"
   }
 ]
