@@ -54,5 +54,22 @@
     "sequence": "/scenes/user_study_case3/sequence.json",
     "frames": 100,
     "fps": 12
+  },
+  {
+    "title": "Infinigen Snowy Mountain — Technical Evaluation Scene 01",
+    "id": "technical_eval_scene01",
+    "thumbnail": "/scenes/technical_eval_scene01/assets/thumbnail.jpg",
+    "video": "/scenes/technical_eval_scene01/assets/raw_frames_2k.mp4",
+    "sequence": "/scenes/technical_eval_scene01/sequence.json",
+    "frames": 60,
+    "fps": 30,
+    "tags": [
+      "SOG",
+      "Snowy Mountain",
+      "4 dynamic objects",
+      "Technical evaluation"
+    ],
+    "deferLoad": "/scenes/technical_eval_scene01/assets/background.sog",
+    "deferFilename": "background.sog"
   }
 ]
