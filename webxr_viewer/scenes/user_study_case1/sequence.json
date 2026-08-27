@@ -1,6 +1,10 @@
 {
   "version": 1,
   "name": "User Study Case 1",
+  "dynamic_sources": {
+    "person": "case3_reseed10_obj000_da360_refscale_no_static_icp_seq",
+    "trash_can": "Scene360 case3_trashcan_aug, aligned per frame to the person's DA360 refscale transform"
+  },
   "fps": 12.0,
   "autoplay": true,
   "frames": [
